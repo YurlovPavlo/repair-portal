@@ -1,0 +1,401 @@
+/* ==================================================
+   📄 СЦ КомПашка — Сторінка послуг
+   Чистий дизайн, правильні відступи, сучасна сітка
+   ================================================== */
+
+/* ---------- Змінні ---------- */
+:root {
+  --svc-blue: #1565C0;
+  --svc-blue-light: #1976D2;
+  --svc-blue-pale: #E3F2FD;
+  --svc-blue-bg: #F0F6FF;
+  --svc-gray-100: #F8FAFC;
+  --svc-gray-200: #EEF2F6;
+  --svc-gray-400: #94A3B8;
+  --svc-gray-600: #475569;
+  --svc-gray-800: #1E293B;
+  --svc-success: #22C55E;
+  --svc-warning: #F59E0B;
+  --svc-error: #EF4444;
+  --svc-radius: 16px;
+  --svc-radius-sm: 10px;
+  --svc-gap: 24px;
+  --svc-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ---------- Загальні налаштування сторінки ---------- */
+.svc-page {
+  background: var(--svc-gray-100);
+  min-height: 100vh;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+/* ---------- Заголовок сторінки ---------- */
+.svc-page-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.svc-page-title {
+  font-family: 'Nunito', sans-serif;
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  font-weight: 900;
+  color: var(--svc-gray-800);
+  letter-spacing: -0.5px;
+  margin: 0;
+}
+
+/* ---------- Таби-фільтри ---------- */
+.svc-tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 36px;
+  background: var(--white);
+  padding: 10px 16px;
+  border-radius: 50px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.svc-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: none;
+  background: transparent;
+  color: var(--svc-gray-600);
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--svc-transition);
+}
+
+.svc-tab:hover {
+  background: var(--svc-blue-pale);
+  color: var(--svc-blue);
+}
+
+.svc-tab--active {
+  background: var(--svc-blue);
+  color: var(--white);
+  box-shadow: 0 4px 14px rgba(21, 101, 192, 0.3);
+}
+
+.svc-tab i {
+  font-size: 0.85rem;
+}
+
+/* ---------- Сітка карток ---------- */
+.svc-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--svc-gap);
+}
+
+/* ---------- Картка послуги ---------- */
+.svc-card {
+  background: var(--white);
+  border-radius: var(--svc-radius);
+  padding: 28px 24px 24px;
+  border: 1px solid var(--svc-gray-200);
+  transition: var(--svc-transition);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.svc-card:hover {
+  border-color: var(--svc-blue-light);
+  box-shadow: 0 8px 30px rgba(21, 101, 192, 0.12);
+  transform: translateY(-4px);
+}
+
+/* Верхня частина: іконка + бейдж */
+.svc-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 18px;
+}
+
+.svc-card__icon-wrap {
+  width: 48px;
+  height: 48px;
+  background: var(--svc-blue-pale);
+  border-radius: var(--svc-radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--svc-blue);
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+.svc-card__badge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: var(--white);
+  letter-spacing: 0.5px;
+}
+
+.svc-card__badge--hot { background: var(--svc-warning); }
+.svc-card__badge--hit { background: var(--svc-success); }
+.svc-card__badge--sale { background: var(--svc-error); }
+
+/* Заголовок та опис */
+.svc-card__title {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--svc-gray-800);
+  margin: 0 0 8px;
+  line-height: 1.3;
+}
+
+.svc-card__desc {
+  font-size: 0.88rem;
+  color: var(--svc-gray-600);
+  line-height: 1.5;
+  margin: 0 0 16px;
+}
+
+/* Фічі (чеклисти) */
+.svc-card__features {
+  margin: 0 0 20px;
+  padding: 0;
+  list-style: none;
+  flex-grow: 1;
+}
+
+.svc-card__features li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: var(--svc-gray-600);
+  margin-bottom: 8px;
+}
+
+.svc-card__features li i {
+  color: var(--svc-success);
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+/* Ціна */
+.svc-card__price {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin-bottom: 18px;
+  padding-top: 16px;
+  border-top: 1px dashed var(--svc-gray-200);
+}
+
+.svc-card__price-prefix {
+  font-size: 0.8rem;
+  color: var(--svc-gray-400);
+  font-weight: 600;
+}
+
+.svc-card__price-value {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--svc-blue);
+  line-height: 1;
+}
+
+.svc-card__price-suffix {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--svc-gray-600);
+}
+
+/* Дії (кнопки) */
+.svc-card__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.svc-card__link--details {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px;
+  border-radius: var(--svc-radius-sm);
+  background: transparent;
+  border: none;
+  color: var(--svc-blue);
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--svc-transition);
+}
+
+.svc-card__link--details:hover {
+  background: var(--svc-blue-pale);
+}
+
+.svc-card__btn--order {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border-radius: var(--svc-radius-sm);
+  background: var(--svc-blue);
+  color: var(--white);
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: var(--svc-transition);
+}
+
+.svc-card__btn--order:hover {
+  background: var(--svc-blue-light);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(21, 101, 192, 0.3);
+}
+
+/* Load More */
+.svc-load-more {
+  text-align: center;
+  margin-top: 48px;
+}
+
+/* ---------- CTA секція ---------- */
+.cta--blue {
+  background: var(--svc-blue);
+  padding: 60px 0;
+  text-align: center;
+  color: var(--white);
+}
+
+.cta--blue .cta__title {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+  color: var(--white);
+}
+
+.cta--blue .cta__text {
+  color: rgba(255,255,255,0.9);
+  margin-bottom: 28px;
+  font-size: 1.05rem;
+}
+
+.btn--white {
+  background: var(--white);
+  color: var(--svc-blue);
+  border: none;
+}
+
+.btn--white:hover {
+  background: var(--svc-blue-pale);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* ---------- Адаптив ---------- */
+@media (max-width: 1024px) {
+  .svc-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .svc-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .svc-tabs {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    justify-content: flex-start;
+    border-radius: 14px;
+    padding: 8px;
+    max-width: 100%;
+  }
+
+  .svc-tabs::-webkit-scrollbar { height: 3px; }
+  .svc-tabs::-webkit-scrollbar-thumb { background: var(--svc-blue-light); border-radius: 3px; }
+
+  .svc-tab {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    white-space: nowrap;
+    padding: 8px 16px;
+    font-size: 0.85rem;
+  }
+
+  .svc-page {
+    padding-top: 24px;
+    padding-bottom: 60px;
+  }
+
+  .svc-page-header {
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .svc-card {
+    padding: 20px 16px;
+  }
+
+  .svc-card__title {
+    font-size: 1rem;
+  }
+
+  .svc-card__price-value {
+    font-size: 1.6rem;
+  }
+}
+
+/* ---------- Анімація появи ---------- */
+@keyframes svc-fade-in {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.svc-card {
+  animation: svc-fade-in 0.4s ease both;
+}
+
+.svc-card:nth-child(1) { animation-delay: 0.05s; }
+.svc-card:nth-child(2) { animation-delay: 0.1s; }
+.svc-card:nth-child(3) { animation-delay: 0.15s; }
+.svc-card:nth-child(4) { animation-delay: 0.2s; }
+.svc-card:nth-child(5) { animation-delay: 0.25s; }
+.svc-card:nth-child(6) { animation-delay: 0.3s; }
+
+/* Приховані картки */
+.svc-card.is-hidden {
+  display: none !important;
+}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .svc-card {
+    animation: none !important;
+    transition: none !important;
+  }
+}

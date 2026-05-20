@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Послуги | СЦ КомПашка — Ремонт комп'ютерів та ноутбуків</title>
+  <meta name="description" content="Повний каталог послуг сервісного центру. Ремонт ноутбуків, ПК, моніторів. Ціни від 200 ₴. Гарантія.">
+  
+  <!-- 1. Базові стилі -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- 2. Стилі сторінки послуг -->
+  <link rel="stylesheet" href="css/services.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header__inner container">
+      <a href="/uk" class="logo">
+        <svg class="logo__icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <rect x="15" y="15" width="70" height="50" rx="5" fill="#1565C0" stroke="#0D47A1" stroke-width="2"/>
+          <rect x="20" y="20" width="60" height="35" rx="3" fill="#FFFFFF"/>
+          <circle cx="38" cy="35" r="5" fill="#1565C0"/><circle cx="62" cy="35" r="5" fill="#1565C0"/>
+          <path d="M 42 43 Q 50 50 58 43" stroke="#1565C0" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <rect x="40" y="65" width="20" height="8" rx="2" fill="#1565C0"/>
+          <path d="M 30 73 L 70 73 L 65 80 L 35 80 Z" fill="#1565C0"/>
+          <path d="M 15 35 Q 5 30 5 25" stroke="#1565C0" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <path d="M 85 35 Q 95 30 95 25" stroke="#1565C0" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <path d="M 38 78 Q 35 88 38 92" stroke="#1565C0" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <path d="M 62 78 Q 65 88 62 92" stroke="#1565C0" stroke-width="4" fill="none" stroke-linecap="round"/>
+        </svg>
+        <div class="logo__text">
+          <span class="logo__name">СЦ КомПашка</span>
+          <span class="logo__sub">СЕРВІСНИЙ ЦЕНТР</span>
+        </div>
+      </a>
+
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="/uk" class="nav__link">Головна</a></li>
+          <li><a href="/uk/services" class="nav__link nav__link--active">Послуги</a></li>
+          <li><a href="/uk/prices" class="nav__link">Прайс</a></li>
+          <li><a href="/uk/pc-builder" class="nav__link">Конфігуратор</a></li>
+          <li><a href="/uk/blog" class="nav__link">Блог</a></li>
+          <li><a href="/uk/about" class="nav__link">Про нас</a></li>
+        </ul>
+      </nav>
+
+      <a href="/uk/contact" class="header__cta">
+        <i class="fas fa-calendar-check"></i> <span>Записатися</span>
+      </a>
+
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- 📦 Page Content -->
+  <main class="svc-page">
+    <div class="container">
+      
+      <!-- Заголовок -->
+      <div class="svc-page-header">
+        <h1 class="svc-page-title">НАШІ ПОСЛУГИ</h1>
+      </div>
+
+      <!-- Фільтри -->
+      <div class="svc-tabs" id="svcFilters">
+        <button class="svc-tab svc-tab--active" data-filter="all">
+          <i class="fas fa-th"></i> Всі
+        </button>
+        <button class="svc-tab" data-filter="laptops">
+          <i class="fas fa-laptop"></i> Ноутбуки
+        </button>
+        <button class="svc-tab" data-filter="desktops">
+          <i class="fas fa-desktop"></i> Комп'ютери
+        </button>
+        <button class="svc-tab" data-filter="monitors">
+          <i class="fas fa-tv"></i> Монітори
+        </button>
+        <button class="svc-tab" data-filter="tvs">
+          <i class="fas fa-tv"></i> Телевізори
+        </button>
+        <button class="svc-tab" data-filter="software">
+          <i class="fas fa-code"></i> ПЗ та оптимізація
+        </button>
+      </div>
+
+      <!-- Сітка карток -->
+      <div class="svc-grid" id="svcGrid">
+        
+        <!-- Card 1 -->
+        <article class="svc-card" data-category="laptops">
+          <div class="svc-card__header">
+            <div class="svc-card__icon-wrap">
+              <i class="fas fa-laptop-medical"></i>
+            </div>
+            <span class="svc-card__badge svc-card__badge--hot">ПОПУЛЯРНЕ</span>
+          </div>
+          <h3 class="svc-card__title">Заміна матриці ноутбука</h3>
+          <p class="svc-card__desc">Професійна заміна екрана з калібруванням кольору. Оригінал та якісні аналоги.</p>
+          <ul class="svc-card__features">
+            <li><i class="fas fa-check-circle"></i> Діагностика безкоштовно</li>
+            <li><i class="fas fa-check-circle"></i> Гарантія 6–12 міс.</li>
+            <li><i class="fas fa-check-circle"></i> Виконання 1–2 дні</li>
+          </ul>
+          <div class="svc-card__price">
+            <span class="svc-card__price-prefix">від</span>
+            <span class="svc-card__price-value" data-target="850">0</span>
+            <span class="svc-card__price-suffix">₴</span>
+          </div>
+          <div class="svc-card__actions">
+            <button class="svc-card__link svc-card__link--details" aria-label="Деталі">
+              <i class="fas fa-eye"></i> Деталі
+            </button>
+            <a href="/uk/contact" class="svc-card__btn svc-card__btn--order">
+              <i class="fas fa-paper-plane"></i> Замовити
+            </a>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="svc-card" data-category="laptops">
+          <div class="svc-card__header">
+            <div class="svc-card__icon-wrap">
+              <i class="fas fa-keyboard"></i>
+            </div>
+          </div>
+          <h3 class="svc-card__title">Заміна клавіатури</h3>
+          <p class="svc-card__desc">Заміна клавіатури з підсвіткою або без. Підбір за точною моделлю.</p>
+          <ul class="svc-card__features">
+            <li><i class="fas fa-check-circle"></i> Оригінальні запчастини</li>
+            <li><i class="fas fa-check-circle"></i> Гарантія 6 міс.</li>
+            <li><i class="fas fa-check-circle"></i> Виконання 1–3 дні</li>
+          </ul>
+          <div class="svc-card__price">
+            <span class="svc-card__price-prefix">від</span>
+            <span class="svc-card__price-value" data-target="450">0</span>
+            <span class="svc-card__price-suffix">₴</span>
+          </div>
+          <div class="svc-card__actions">
+            <button class="svc-card__link svc-card__link--details"><i class="fas fa-eye"></i> Деталі</button>
+            <a href="/uk/contact" class="svc-card__btn svc-card__btn--order"><i class="fas fa-paper-plane"></i> Замовити</a>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="svc-card" data-category="desktops">
+          <div class="svc-card__header">
+            <div class="svc-card__icon-wrap">
+              <i class="fas fa-tools"></i>
+            </div>
+            <span class="svc-card__badge svc-card__badge--hit">ХІТ</span>
+          </div>
+          <h3 class="svc-card__title">Збірка ПК під ключ</h3>
+          <p class="svc-card__desc">Підбір комплектуючих під бюджет та задачі. Збірка, налаштування, стрес-тести.</p>
+          <ul class="svc-card__features">
+            <li><i class="fas fa-check-circle"></i> Безкоштовний підбір</li>
+            <li><i class="fas fa-check-circle"></i> Гарантія 24 міс.</li>
+            <li><i class="fas fa-check-circle"></i> Виконання 1–3 дні</li>
+          </ul>
+          <div class="svc-card__price">
+            <span class="svc-card__price-prefix">від</span>
+            <span class="svc-card__price-value" data-target="800">0</span>
+            <span class="svc-card__price-suffix"></span>
+          </div>
+          <div class="svc-card__actions">
+            <button class="svc-card__link svc-card__link--details"><i class="fas fa-eye"></i> Деталі</button>
+            <a href="/uk/contact" class="svc-card__btn svc-card__btn--order"><i class="fas fa-paper-plane"></i> Замовити</a>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="svc-card" data-category="software">
+          <div class="svc-card__header">
+            <div class="svc-card__icon-wrap">
+              <i class="fab fa-windows"></i>
+            </div>
+          </div>
+          <h3 class="svc-card__title">Встановлення Windows</h3>
+          <p class="svc-card__desc">Ліцензійна ОС, драйвери, офіс, антивірус. Збереження ваших даних.</p>
+          <ul class="svc-card__features">
+            <li><i class="fas fa-check-circle"></i> Ліцензійна ОС</li>
+            <li><i class="fas fa-check-circle"></i> Резервна копія</li>
+            <li><i class="fas fa-check-circle"></i> Виконання 2–4 год</li>
+          </ul>
+          <div class="svc-card__price">
+            <span class="svc-card__price-prefix">від</span>
+            <span class="svc-card__price-value" data-target="350">0</span>
+            <span class="svc-card__price-suffix">₴</span>
+          </div>
+          <div class="svc-card__actions">
+            <button class="svc-card__link svc-card__link--details"><i class="fas fa-eye"></i> Деталі</button>
+            <a href="/uk/contact" class="svc-card__btn svc-card__btn--order"><i class="fas fa-paper-plane"></i> Замовити</a>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="svc-card" data-category="monitors">
+          <div class="svc-card__header">
+            <div class="svc-card__icon-wrap">
+              <i class="fas fa-tv"></i>
+            </div>
+          </div>
+          <h3 class="svc-card__title">Ремонт моніторів</h3>
+          <p class="svc-card__desc">Заміна матриці, LED-підсвітки, ремонт плат живлення та керування.</p>
+          <ul class="svc-card__features">
+            <li><i class="fas fa-check-circle"></i> Діагностика безкоштовно</li>
+            <li><i class="fas fa-check-circle"></i> Гарантія 6 міс.</li>
+            <li><i class="fas fa-check-circle"></i> Виконання 1–3 дні</li>
+          </ul>
+          <div class="svc-card__price">
+            <span class="svc-card__price-prefix">від</span>
+            <span class="svc-card__price-value" data-target="400">0</span>
+            <span class="svc-card__price-suffix">₴</span>
+          </div>
+          <div class="svc-card__actions">
+            <button class="svc-card__link svc-card__link--details"><i class="fas fa-eye"></i> Деталі</button>
+            <a href="/uk/contact" class="svc-card__btn svc-card__btn--order"><i class="fas fa-paper-plane"></i> Замовити</a>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="svc-card" data-category="laptops">
+          <div class="svc-card__header">
+            <div class="svc-card__icon-wrap">
+              <i class="fas fa-wind"></i>
+            </div>
+            <span class="svc-card__badge svc-card__badge--sale">-20%</span>
+          </div>
+          <h3 class="svc-card__title">Чистка + термопаста</h3>
+          <p class="svc-card__desc">Повна чистка системи охолодження. Заміна термопасти на Arctic MX-4.</p>
+          <ul class="svc-card__features">
+            <li><i class="fas fa-check-circle"></i> Термопаста преміум</li>
+            <li><i class="fas fa-check-circle"></i> Тест температур</li>
+            <li><i class="fas fa-check-circle"></i> Виконання 2–3 год</li>
+          </ul>
+          <div class="svc-card__price">
+            <span class="svc-card__price-prefix">від</span>
+            <span class="svc-card__price-value" data-target="450">0</span>
+            <span class="svc-card__price-suffix">₴</span>
+          </div>
+          <div class="svc-card__actions">
+            <button class="svc-card__link svc-card__link--details"><i class="fas fa-eye"></i> Деталі</button>
+            <a href="/uk/contact" class="svc-card__btn svc-card__btn--order"><i class="fas fa-paper-plane"></i> Замовити</a>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Load More -->
+      <div class="svc-load-more" id="svcLoadMoreWrap" style="display:none;">
+        <button class="btn btn--outline" id="svcLoadMore">
+          <i class="fas fa-plus"></i> Показати ще
+        </button>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- CTA -->
+  <section class="cta cta--blue">
+    <div class="container cta__inner">
+      <h2 class="cta__title">НЕ ЗНАЙШЛИ ПОТРІБНУ ПОСЛУГУ?</h2>
+      <p class="cta__text">Зателефонуйте нам — ми допоможемо з будь-якою проблемою!</p>
+      <a href="tel:+380936949627" class="btn btn--white btn--large">
+        <i class="fas fa-phone-alt"></i> 093 694 96 27
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__col footer__col--logo">
+        <a href="/uk" class="logo">
+          <div class="logo__icon">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <rect x="15" y="15" width="70" height="50" rx="5" fill="#1565C0" stroke="#0D47A1" stroke-width="2"/>
+              <rect x="20" y="20" width="60" height="35" rx="3" fill="#FFFFFF"/>
+              <circle cx="38" cy="35" r="5" fill="#1565C0"/><circle cx="62" cy="35" r="5" fill="#1565C0"/>
+              <path d="M 42 43 Q 50 50 58 43" stroke="#1565C0" stroke-width="3" fill="none" stroke-linecap="round"/>
+              <rect x="40" y="65" width="20" height="8" rx="2" fill="#1565C0"/>
+              <path d="M 30 73 L 70 73 L 65 80 L 35 80 Z" fill="#1565C0"/>
+              <path d="M 15 35 Q 5 30 5 25" stroke="#1565C0" stroke-width="4" fill="none" stroke-linecap="round"/>
+              <path d="M 85 35 Q 95 30 95 25" stroke="#1565C0" stroke-width="4" fill="none" stroke-linecap="round"/>
+              <path d="M 38 78 Q 35 88 38 92" stroke="#1565C0" stroke-width="4" fill="none" stroke-linecap="round"/>
+              <path d="M 62 78 Q 65 88 62 92" stroke="#1565C0" stroke-width="4" fill="none" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="logo__text">
+            <span class="logo__name">СЦ КомПашка</span>
+            <span class="logo__sub">СЕРВІСНИЙ ЦЕНТР</span>
+          </div>
+        </a>
+        <p class="footer__desc">Професійний ремонт комп'ютерів та ноутбуків у Миколаєві.</p>
+      </div>
+      <div class="footer__col">
+        <h4>ПОСЛУГИ</h4>
+        <ul>
+          <li><a href="/uk/services/laptops">Ноутбуки</a></li>
+          <li><a href="/uk/services/desktops">Комп'ютери</a></li>
+          <li><a href="/uk/services/monitors">Монітори</a></li>
+          <li><a href="/uk/services/tvs">Телевізори</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>ІНФОРМАЦІЯ</h4>
+        <ul>
+          <li><a href="/uk/prices">Прайс</a></li>
+          <li><a href="/uk/about">Про нас</a></li>
+          <li><a href="/uk/blog">Блог</a></li>
+          <li><a href="/uk/contact">Контакти</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>КОНТАКТИ</h4>
+        <address class="footer__address">
+          <p><i class="fas fa-map-marker-alt"></i> м. Миколаїв, вул. Гліба Бабіча, 51</p>
+          <p><i class="fas fa-phone-alt"></i> <a href="tel:+380936949627">093 694 96 27</a></p>
+          <p><i class="fas fa-clock"></i> Пн–Нд: 9:00 – 20:00</p>
+        </address>
+      </div>
+    </div>
+    <div class="footer__bottom"><div class="container"><p>&copy; 2026 СЦ КомПашка. Всі права захищені.</p></div></div>
+  </footer>
+
+  <script src="js/services.js"></script>
+</body>
+</html>

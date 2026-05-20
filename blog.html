@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Блог | СЦ КомПашка — Корисні статті про ремонт техніки</title>
+  <meta name="description" content="Корисні статті про ремонт ноутбуків, комп'ютерів та іншої техніки. Поради щодо догляду, діагностики та профілактики.">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/blog.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header__inner container">
+      <a href="/uk" class="logo">
+        <div class="logo__icon">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <rect x="15" y="15" width="70" height="50" rx="5" fill="#1565C0" stroke="#0D47A1" stroke-width="2"/>
+            <rect x="20" y="20" width="60" height="35" rx="3" fill="#FFFFFF"/>
+            <circle cx="38" cy="35" r="5" fill="#1565C0"/><circle cx="62" cy="35" r="5" fill="#1565C0"/>
+            <path d="M 42 43 Q 50 50 58 43" stroke="#1565C0" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <rect x="40" y="65" width="20" height="8" rx="2" fill="#1565C0"/>
+            <path d="M 30 73 L 70 73 L 65 80 L 35 80 Z" fill="#1565C0"/>
+            <path d="M 15 35 Q 5 30 5 25" stroke="#1565C0" stroke-width="4" fill="none" stroke-linecap="round"/>
+            <path d="M 85 35 Q 95 30 95 25" stroke="#1565C0" stroke-width="4" fill="none" stroke-linecap="round"/>
+            <path d="M 38 78 Q 35 88 38 92" stroke="#1565C0" stroke-width="4" fill="none" stroke-linecap="round"/>
+            <path d="M 62 78 Q 65 88 62 92" stroke="#1565C0" stroke-width="4" fill="none" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="logo__text">
+          <span class="logo__name">СЦ КомПашка</span>
+          <span class="logo__sub">СЕРВІСНИЙ ЦЕНТР</span>
+        </div>
+      </a>
+
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="/uk" class="nav__link">Головна</a></li>
+          <li><a href="/uk/services" class="nav__link">Послуги</a></li>
+          <li><a href="/uk/prices" class="nav__link">Прайс</a></li>
+          <li><a href="/uk/pc-builder" class="nav__link">Конфігуратор</a></li>
+          <li><a href="/uk/blog" class="nav__link nav__link--active">Блог</a></li>
+          <li><a href="/uk/about" class="nav__link">Про нас</a></li>
+        </ul>
+      </nav>
+      <a href="/uk/contact" class="header__cta"><i class="fas fa-calendar-check"></i> <span>Записатися</span></a>
+      <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="blog-hero">
+    <div class="container">
+      <h1>БЛОГ ТА БАЗА ЗНАНЬ</h1>
+      <p>Корисні статті про ремонт техніки, поради щодо догляду та діагностики</p>
+      
+      <!-- Search Bar -->
+      <div class="search-box">
+        <i class="fas fa-search"></i>
+        <input type="text" id="searchInput" placeholder="Пошук статей...">
+      </div>
+      
+      <!-- Category Filters -->
+      <div class="blog-filters" id="blogFilters">
+        <button class="filter-btn active" data-category="all">Всі статті</button>
+        <button class="filter-btn" data-category="laptops">Ноутбуки</button>
+        <button class="filter-btn" data-category="desktops">Комп'ютери</button>
+        <button class="filter-btn" data-category="maintenance">Догляд</button>
+        <button class="filter-btn" data-category="software">Програми</button>
+        <button class="filter-btn" data-category="tips">Поради</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Grid -->
+  <main class="blog-page">
+    <div class="container">
+      <div class="blog-grid" id="blogGrid">
+        
+        <!-- Article 1 -->
+        <article class="blog-card" data-category="laptops maintenance">
+          <div class="blog-card__image">
+            <i class="fas fa-laptop-medical"></i>
+            <span class="category-tag">Ноутбуки</span>
+          </div>
+          <div class="blog-card__content">
+            <div class="blog-meta">
+              <span><i class="fas fa-calendar"></i> 15 травня 2026</span>
+              <span><i class="fas fa-clock"></i> 5 хв читання</span>
+            </div>
+            <h3>Як продовжити життя ноутбуку: 10 порад від майстрів</h3>
+            <p>Професійні рекомендації щодо догляду за ноутбуком: чистка, охолодження, правильне використання батареї...</p>
+            <a href="#" class="read-more">Читати далі <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="blog-card" data-category="desktops">
+          <div class="blog-card__image">
+            <i class="fas fa-desktop"></i>
+            <span class="category-tag">Комп'ютери</span>
+          </div>
+          <div class="blog-card__content">
+            <div class="blog-meta">
+              <span><i class="fas fa-calendar"></i> 12 травня 2026</span>
+              <span><i class="fas fa-clock"></i> 7 хв читання</span>
+            </div>
+            <h3>SSD чи HDD: що обрати для вашого ПК у 2026?</h3>
+            <p>Порівняння швидкодії, надійності та ціни. Коли варто обрати гібридний варіант...</p>
+            <a href="#" class="read-more">Читати далі <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <!-- Article 3 -->
+        <article class="blog-card" data-category="software tips">
+          <div class="blog-card__image">
+            <i class="fas fa-shield-alt"></i>
+            <span class="category-tag">Програми</span>
+          </div>
+          <div class="blog-card__content">
+            <div class="blog-meta">
+              <span><i class="fas fa-calendar"></i> 8 травня 2026</span>
+              <span><i class="fas fa-clock"></i> 6 хв читання</span>
+            </div>
+            <h3>Як захистити комп'ютер від вірусів: повний гайд</h3>
+            <p>Антивіруси, брандмауери, безпечний сёрфінг. Що дійсно працює, а що — марна трата часу...</p>
+            <a href="#" class="read-more">Читати далі <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <!-- Article 4 -->
+        <article class="blog-card" data-category="maintenance">
+          <div class="blog-card__image">
+            <i class="fas fa-wind"></i>
+            <span class="category-tag">Догляд</span>
+          </div>
+          <div class="blog-card__content">
+            <div class="blog-meta">
+              <span><i class="fas fa-calendar"></i> 5 травня 2026</span>
+              <span><i class="fas fa-clock"></i> 4 хв читання</span>
+            </div>
+            <h3>Чистка комп'ютера від пилу: як часто і чому це важливо</h3>
+            <p>Перегрів — головний ворог техніки. Як правильно чистити систему охолодження самостійно...</p>
+            <a href="#" class="read-more">Читати далі <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <!-- Article 5 -->
+        <article class="blog-card" data-category="laptops software">
+          <div class="blog-card__image">
+            <i class="fas fa-battery-full"></i>
+            <span class="category-tag">Ноутбуки</span>
+          </div>
+          <div class="blog-card__content">
+            <div class="blog-meta">
+              <span><i class="fas fa-calendar"></i> 1 травня 2026</span>
+              <span><i class="fas fa-clock"></i> 5 хв читання</span>
+            </div>
+            <h3>Чому швидко розряджається ноутбук? 7 причин</h3>
+            <p>Від налаштувань яскравості до зносу батареї. Як діагностувати проблему та вирішити...</p>
+            <a href="#" class="read-more">Читати далі <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <!-- Article 6 -->
+        <article class="blog-card" data-category="tips desktops">
+          <div class="blog-card__image">
+            <i class="fas fa-microchip"></i>
+            <span class="category-tag">Поради</span>
+          </div>
+          <div class="blog-card__content">
+            <div class="blog-meta">
+              <span><i class="fas fa-calendar"></i> 28 квітня 2026</span>
+              <span><i class="fas fa-clock"></i> 8 хв читання</span>
+            </div>
+            <h3>Апгрейд старого ПК: що можна покращити?</h3>
+            <p>RAM, SSD, відеокарта — що дасть найбільший приріст продуктивності за мінімальні гроші...</p>
+            <a href="#" class="read-more">Читати далі <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <!-- Article 7 -->
+        <article class="blog-card" data-category="software">
+          <div class="blog-card__image">
+            <i class="fab fa-windows"></i>
+            <span class="category-tag">Програми</span>
+          </div>
+          <div class="blog-card__content">
+            <div class="blog-meta">
+              <span><i class="fas fa-calendar"></i> 25 квітня 2026</span>
+              <span><i class="fas fa-clock"></i> 6 хв читання</span>
+            </div>
+            <h3>Windows 10 чи 11: що обрати у 2026 році?</h3>
+            <p>Порівняння продуктивності, сумісності та вимог до заліза. Чи варто оновлюватися...</p>
+            <a href="#" class="read-more">Читати далі <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <!-- Article 8 -->
+        <article class="blog-card" data-category="laptops maintenance">
+          <div class="blog-card__image">
+            <i class="fas fa-tint-slash"></i>
+            <span class="category-tag">Ноутбуки</span>
+          </div>
+          <div class="blog-card__content">
+            <div class="blog-meta">
+              <span><i class="fas fa-calendar"></i> 20 квітня 2026</span>
+              <span><i class="fas fa-clock"></i> 4 хв читання</span>
+            </div>
+            <h3>Залили ноутбук? Що робити перші 5 хвилин</h3>
+            <p>Покрокова інструкція рятування техніки після залиття. Чого НЕ можна робити...</p>
+            <a href="#" class="read-more">Читати далі <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <!-- Article 9 -->
+        <article class="blog-card" data-category="tips">
+          <div class="blog-card__image">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="category-tag">Поради</span>
+          </div>
+          <div class="blog-card__content">
+            <div class="blog-meta">
+              <span><i class="fas fa-calendar"></i> 15 квітня 2026</span>
+              <span><i class="fas fa-clock"></i> 7 хв читання</span>
+            </div>
+            <h3>Як обрати сервісний центр: 5 ознак надійного майстра</h3>
+            <p>Гарантія, прозорість цін, відгуки — на що звертати увагу при виборі сервісу...</p>
+            <a href="#" class="read-more">Читати далі <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Load More -->
+      <div class="blog-load-more">
+        <button class="btn btn--outline" id="loadMoreBtn">
+          <i class="fas fa-plus"></i> Завантажити ще
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <!-- CTA -->
+  <section class="cta cta--blue">
+    <div class="container">
+      <div class="cta__content">
+        <h2 class="cta__title">НЕ ЗНАЙШЛИ ВІДПОВІДЬ?</h2>
+        <p class="cta__text">Запитайте у наших майстрів — ми допоможемо!</p>
+        <a href="/uk/contact" class="btn btn--white btn--large">
+          <i class="fas fa-question-circle"></i> ЗАПИТАТИ ФАХІВЦЯ
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__col footer__col--logo">
+        <a href="/uk" class="logo">
+          <div class="logo__icon">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <rect x="15" y="15" width="70" height="50" rx="5" fill="#1565C0" stroke="#0D47A1" stroke-width="2"/>
+              <rect x="20" y="20" width="60" height="35" rx="3" fill="#FFFFFF"/>
+              <circle cx="38" cy="35" r="5" fill="#1565C0"/><circle cx="62" cy="35" r="5" fill="#1565C0"/>
+              <path d="M 42 43 Q 50 50 58 43" stroke="#1565C0" stroke-width="3" fill="none" stroke-linecap="round"/>
+              <rect x="40" y="65" width="20" height="8" rx="2" fill="#1565C0"/>
+              <path d="M 30 73 L 70 73 L 65 80 L 35 80 Z" fill="#1565C0"/>
+              <path d="M 15 35 Q 5 30 5 25" stroke="#1565C0" stroke-width="4" fill="none" stroke-linecap="round"/>
+              <path d="M 85 35 Q 95 30 95 25" stroke="#1565C0" stroke-width="4" fill="none" stroke-linecap="round"/>
+              <path d="M 38 78 Q 35 88 38 92" stroke="#1565C0" stroke-width="4" fill="none" stroke-linecap="round"/>
+              <path d="M 62 78 Q 65 88 62 92" stroke="#1565C0" stroke-width="4" fill="none" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="logo__text">
+            <span class="logo__name">СЦ КомПашка</span>
+            <span class="logo__sub">СЕРВІСНИЙ ЦЕНТР</span>
+          </div>
+        </a>
+        <p class="footer__desc">Професійний ремонт комп'ютерів та ноутбуків у Миколаєві.</p>
+      </div>
+      <div class="footer__col">
+        <h4>ПОСЛУГИ</h4>
+        <ul>
+          <li><a href="/uk/services/laptops">Ноутбуки</a></li>
+          <li><a href="/uk/services/desktops">Комп'ютери</a></li>
+          <li><a href="/uk/services/monitors">Монітори</a></li>
+          <li><a href="/uk/services/tvs">Телевізори</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>ІНФОРМАЦІЯ</h4>
+        <ul>
+          <li><a href="/uk/prices">Прайс</a></li>
+          <li><a href="/uk/about">Про нас</a></li>
+          <li><a href="/uk/blog">Блог</a></li>
+          <li><a href="/uk/contact">Контакти</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>КОНТАКТИ</h4>
+        <address class="footer__address">
+          <p><i class="fas fa-map-marker-alt"></i> м. Миколаїв, вул. Гліба Бабича, 51</p>
+          <p><i class="fas fa-phone-alt"></i> <a href="tel:+380936949627">093 694 96 27</a></p>
+          <p><i class="fas fa-clock"></i> Пн–Нд: згідно графіку</p>
+        </address>
+      </div>
+    </div>
+    <div class="footer__bottom"><div class="container"><p>&copy; 2026 СЦ КомПашка. Всі права захищені.</p></div></div>
+  </footer>
+
+  <script src="js/blog.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

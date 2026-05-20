@@ -1,0 +1,217 @@
+/* =========================================
+    СЦ КомПашка — Сторінка Прайс-листу (v2)
+   ========================================= */
+
+:root {
+  --price-gray: #f8fafc;
+  --price-border: #e2e8f0;
+  --price-hover: #f1f5f9;
+  --price-blue: #1565C0;
+  --price-text: #334155;
+  --price-sub: #64748b;
+}
+
+.prices-page {
+  background: var(--price-gray);
+  padding: 60px 0 80px;
+  min-height: 100vh;
+}
+
+.prices-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.page-title {
+  font-family: 'Nunito', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #1e293b;
+  margin-bottom: 10px;
+}
+
+.page-desc {
+  font-size: 1.1rem;
+  color: #64748b;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Layout */
+.prices-layout {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 40px;
+  align-items: start;
+}
+
+/* Categories */
+.price-category {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.price-category__title {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--price-blue);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 2px solid #f1f5f9;
+  padding-bottom: 12px;
+}
+
+.price-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.price-item {
+  border-bottom: 1px solid var(--price-border);
+  transition: background 0.2s;
+}
+
+.price-item:last-child { border-bottom: none; }
+.price-item:hover { background: var(--price-hover); }
+
+.price-item label {
+  display: flex;
+  align-items: center;
+  padding: 14px 0;
+  cursor: pointer;
+  width: 100%;
+}
+
+.price-item__check {
+  margin-right: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.price-item__check input {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--price-blue);
+  cursor: pointer;
+}
+
+.price-item__info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.price-item__info .name {
+  font-weight: 700;
+  color: var(--price-text);
+  font-size: 0.95rem;
+}
+
+.price-item__info .sub {
+  font-size: 0.8rem;
+  color: var(--price-sub);
+  margin-top: 2px;
+}
+
+.price-item__cost {
+  font-weight: 800;
+  color: var(--price-blue);
+  font-size: 1.1rem;
+  white-space: nowrap;
+  margin-left: 16px;
+}
+
+/* Sidebar Calc */
+.price-calc-sidebar {
+  position: sticky;
+  top: 100px;
+}
+
+.calc-box {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(21, 101, 192, 0.15);
+  border: 2px solid #e0f2fe;
+}
+
+.calc-title {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #334155;
+}
+
+.calc-list {
+  min-height: 80px;
+  margin-bottom: 20px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.calc-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+  color: #475569;
+  padding-bottom: 8px;
+  border-bottom: 1px dashed #e2e8f0;
+}
+
+.calc-empty {
+  color: #94a3b8;
+  text-align: center;
+  font-size: 0.9rem;
+  font-style: italic;
+  padding-top: 10px;
+}
+
+.calc-footer {
+  border-top: 2px solid #e2e8f0;
+  padding-top: 16px;
+}
+
+.calc-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #1e293b;
+}
+
+.calc-total__value {
+  color: var(--price-blue);
+  font-size: 1.6rem;
+}
+
+.btn--full {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .prices-layout {
+    grid-template-columns: 1fr;
+  }
+  .price-calc-sidebar {
+    position: static;
+    margin-top: 20px;
+    order: -1; /* Калькулятор зверху на мобільному */
+  }
+}

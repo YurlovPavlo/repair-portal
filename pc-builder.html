@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Конфігуратор ПК | СЦ КомПашка</title>
+  <meta name="description" content="Зберіть комп'ютер під свої задачі онлайн. Ігри, робота, офіс. Ми перевіримо сумісність та зберемо все під ключ.">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/builder.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__inner container">
+      <a href="/uk" class="logo">
+        <div class="logo__icon">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <rect x="15" y="15" width="70" height="50" rx="5" fill="#1565C0" stroke="#0D47A1" stroke-width="2"/>
+            <rect x="20" y="20" width="60" height="35" rx="3" fill="#FFFFFF"/>
+            <circle cx="38" cy="35" r="5" fill="#1565C0"/><circle cx="62" cy="35" r="5" fill="#1565C0"/>
+            <path d="M 42 43 Q 50 50 58 43" stroke="#1565C0" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <rect x="40" y="65" width="20" height="8" rx="2" fill="#1565C0"/>
+            <path d="M 30 73 L 70 73 L 65 80 L 35 80 Z" fill="#1565C0"/>
+            <path d="M 15 35 Q 5 30 5 25" stroke="#1565C0" stroke-width="4" fill="none" stroke-linecap="round"/>
+            <path d="M 85 35 Q 95 30 95 25" stroke="#1565C0" stroke-width="4" fill="none" stroke-linecap="round"/>
+            <path d="M 38 78 Q 35 88 38 92" stroke="#1565C0" stroke-width="4" fill="none" stroke-linecap="round"/>
+            <path d="M 62 78 Q 65 88 62 92" stroke="#1565C0" stroke-width="4" fill="none" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="logo__text">
+          <span class="logo__name">СЦ КомПашка</span>
+          <span class="logo__sub">СЕРВІСНИЙ ЦЕНТР</span>
+        </div>
+      </a>
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="/uk" class="nav__link">Головна</a></li>
+          <li><a href="/uk/services" class="nav__link">Послуги</a></li>
+          <li><a href="/uk/prices" class="nav__link">Прайс</a></li>
+          <li><a href="/uk/pc-builder" class="nav__link nav__link--active">Конфігуратор</a></li>
+          <li><a href="/uk/blog" class="nav__link">Блог</a></li>
+          <li><a href="/uk/about" class="nav__link">Про нас</a></li>
+        </ul>
+      </nav>
+      <a href="/uk/contact" class="header__cta"><i class="fas fa-calendar-check"></i> <span>Записатися</span></a>
+      <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main class="builder-page">
+    <div class="container">
+      
+      <div class="builder-hero">
+        <h1 class="page-title">КОНФІГУРАТОР ПК</h1>
+        <p class="page-desc">Оберіть комплектуючі під ваш бюджет та задачі. Наші майстри перевірять сумісність та зберуть все під ключ.</p>
+        
+        <div class="use-case-filter" id="useCaseFilter">
+          <button class="filter-chip active" data-case="all"><i class="fas fa-th"></i> Всі компоненти</button>
+          <button class="filter-chip" data-case="office"><i class="fas fa-briefcase"></i> Офіс / Навчання</button>
+          <button class="filter-chip" data-case="gaming"><i class="fas fa-gamepad"></i> Ігри</button>
+          <button class="filter-chip" data-case="work"><i class="fas fa-video"></i> Робота / Монтаж</button>
+        </div>
+      </div>
+
+      <div class="builder-layout">
+        
+        <!-- Left: Categories -->
+        <div class="builder-main">
+          
+          <!-- CPU -->
+          <section class="builder-section" id="sec-cpu">
+            <div class="section-header">
+              <h2><i class="fas fa-microchip"></i> Процесор</h2>
+              <span class="section-badge" id="badge-cpu">Не обрано</span>
+            </div>
+            <div class="component-grid" data-category="cpu">
+              <div class="component-card" data-type="cpu" data-price="3800" data-name="Intel Core i3-12100F" data-case="office">
+                <div class="card-top"><span class="tier-badge tier--budget">Бюджет</span></div>
+                <div class="card-icon"><i class="fas fa-microchip"></i></div>
+                <div class="card-info"><strong>Intel Core i3-12100F</strong><span>4 ядра / 8 потоків, 4.3 GHz</span></div>
+                <div class="card-price">3 800 ₴</div>
+              </div>
+              <div class="component-card" data-type="cpu" data-price="6900" data-name="Intel Core i5-13400F" data-case="gaming office">
+                <div class="card-top"><span class="tier-badge tier--optimal">Оптимальний</span></div>
+                <div class="card-icon"><i class="fas fa-microchip"></i></div>
+                <div class="card-info"><strong>Intel Core i5-13400F</strong><span>10 ядер / 16 потоків, 4.6 GHz</span></div>
+                <div class="card-price">6 900 ₴</div>
+              </div>
+              <div class="component-card" data-type="cpu" data-price="11500" data-name="AMD Ryzen 7 5700X" data-case="work gaming">
+                <div class="card-top"><span class="tier-badge tier--premium">Топ</span></div>
+                <div class="card-icon"><i class="fas fa-microchip"></i></div>
+                <div class="card-info"><strong>AMD Ryzen 7 5700X</strong><span>8 ядер / 16 потоків, 4.6 GHz</span></div>
+                <div class="card-price">11 500 ₴</div>
+              </div>
+            </div>
+          </section>
+
+          <!-- GPU -->
+          <section class="builder-section" id="sec-gpu">
+            <div class="section-header">
+              <h2><i class="fas fa-gamepad"></i> Відеокарта</h2>
+              <span class="section-badge" id="badge-gpu">Не обрано</span>
+            </div>
+            <div class="component-grid" data-category="gpu">
+              <div class="component-card" data-type="gpu" data-price="0" data-name="Вбудована графіка" data-case="office">
+                <div class="card-top"><span class="tier-badge tier--budget">Бюджет</span></div>
+                <div class="card-icon"><i class="fas fa-desktop"></i></div>
+                <div class="card-info"><strong>Вбудована графіка</strong><span>Офіс, навчання, відео</span></div>
+                <div class="card-price">0 ₴</div>
+              </div>
+              <div class="component-card" data-type="gpu" data-price="11500" data-name="NVIDIA RTX 3050 6GB" data-case="gaming office">
+                <div class="card-top"><span class="tier-badge tier--budget">Бюджет</span></div>
+                <div class="card-icon"><i class="fas fa-gamepad"></i></div>
+                <div class="card-info"><strong>NVIDIA RTX 3050</strong><span>6GB GDDR6, 1080p Gaming</span></div>
+                <div class="card-price">11 500 ₴</div>
+              </div>
+              <div class="component-card" data-type="gpu" data-price="19500" data-name="NVIDIA RTX 4060 8GB" data-case="gaming">
+                <div class="card-top"><span class="tier-badge tier--optimal">Оптимальний</span></div>
+                <div class="card-icon"><i class="fas fa-gamepad"></i></div>
+                <div class="card-info"><strong>NVIDIA RTX 4060</strong><span>8GB GDDR6, DLSS 3, 1080p/1440p</span></div>
+                <div class="card-price">19 500 ₴</div>
+              </div>
+              <div class="component-card" data-type="gpu" data-price="32000" data-name="NVIDIA RTX 4070 Super" data-case="work gaming">
+                <div class="card-top"><span class="tier-badge tier--premium">Топ</span></div>
+                <div class="card-icon"><i class="fas fa-gamepad"></i></div>
+                <div class="card-info"><strong>NVIDIA RTX 4070 Super</strong><span>12GB, 1440p Ultra, Монтаж</span></div>
+                <div class="card-price">32 000 ₴</div>
+              </div>
+            </div>
+          </section>
+
+          <!-- RAM -->
+          <section class="builder-section" id="sec-ram">
+            <div class="section-header">
+              <h2><i class="fas fa-memory"></i> Оперативна пам'ять</h2>
+              <span class="section-badge" id="badge-ram">Не обрано</span>
+            </div>
+            <div class="component-grid" data-category="ram">
+              <div class="component-card" data-type="ram" data-price="1100" data-name="8GB DDR4 3200MHz" data-case="office">
+                <div class="card-top"><span class="tier-badge tier--budget">Бюджет</span></div>
+                <div class="card-icon"><i class="fas fa-memory"></i></div>
+                <div class="card-info"><strong>8GB DDR4</strong><span>3200MHz, 1 модуль</span></div>
+                <div class="card-price">1 100 ₴</div>
+              </div>
+              <div class="component-card" data-type="ram" data-price="2100" data-name="16GB DDR4 3200MHz" data-case="gaming office">
+                <div class="card-top"><span class="tier-badge tier--optimal">Оптимальний</span></div>
+                <div class="card-icon"><i class="fas fa-memory"></i></div>
+                <div class="card-info"><strong>16GB DDR4 (2x8)</strong><span>3200MHz, Dual Channel</span></div>
+                <div class="card-price">2 100 ₴</div>
+              </div>
+              <div class="component-card" data-type="ram" data-price="3800" data-name="32GB DDR4 3600MHz" data-case="work">
+                <div class="card-top"><span class="tier-badge tier--premium">Топ</span></div>
+                <div class="card-icon"><i class="fas fa-memory"></i></div>
+                <div class="card-info"><strong>32GB DDR4 (2x16)</strong><span>3600MHz, Для монтажу</span></div>
+                <div class="card-price">3 800 ₴</div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Storage -->
+          <section class="builder-section" id="sec-storage">
+            <div class="section-header">
+              <h2><i class="fas fa-hdd"></i> Накопичувач</h2>
+              <span class="section-badge" id="badge-storage">Не обрано</span>
+            </div>
+            <div class="component-grid" data-category="storage">
+              <div class="component-card" data-type="storage" data-price="1400" data-name="SSD 500GB SATA" data-case="office">
+                <div class="card-top"><span class="tier-badge tier--budget">Бюджет</span></div>
+                <div class="card-icon"><i class="fas fa-hdd"></i></div>
+                <div class="card-info"><strong>SSD 500GB SATA</strong><span>До 550 МБ/с</span></div>
+                <div class="card-price">1 400 ₴</div>
+              </div>
+              <div class="component-card" data-type="storage" data-price="2600" data-name="NVMe SSD 1TB" data-case="gaming office">
+                <div class="card-top"><span class="tier-badge tier--optimal">Оптимальний</span></div>
+                <div class="card-icon"><i class="fas fa-hdd"></i></div>
+                <div class="card-info"><strong>NVMe SSD 1TB</strong><span>До 3500 МБ/с, Швидке завантаження</span></div>
+                <div class="card-price">2 600 ₴</div>
+              </div>
+              <div class="component-card" data-type="storage" data-price="4500" data-name="NVMe SSD 2TB" data-case="work gaming">
+                <div class="card-top"><span class="tier-badge tier--premium">Топ</span></div>
+                <div class="card-icon"><i class="fas fa-hdd"></i></div>
+                <div class="card-info"><strong>NVMe SSD 2TB</strong><span>До 7000 МБ/с, Для ігор та файлів</span></div>
+                <div class="card-price">4 500 ₴</div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Motherboard -->
+          <section class="builder-section" id="sec-mb">
+            <div class="section-header">
+              <h2><i class="fas fa-border-all"></i> Материнська плата</h2>
+              <span class="section-badge" id="badge-mb">Не обрано</span>
+            </div>
+            <div class="component-grid" data-category="mb">
+              <div class="component-card" data-type="mb" data-price="2400" data-name="Gigabyte H610M (Intel)" data-case="office">
+                <div class="card-top"><span class="tier-badge tier--budget">Бюджет</span></div>
+                <div class="card-icon"><i class="fas fa-border-all"></i></div>
+                <div class="card-info"><strong>Gigabyte H610M</strong><span>LGA1700, DDR4, Micro-ATX</span></div>
+                <div class="card-price">2 400 ₴</div>
+              </div>
+              <div class="component-card" data-type="mb" data-price="4200" data-name="MSI B760M PRO (Intel)" data-case="gaming">
+                <div class="card-top"><span class="tier-badge tier--optimal">Оптимальний</span></div>
+                <div class="card-icon"><i class="fas fa-border-all"></i></div>
+                <div class="card-info"><strong>MSI B760M PRO</strong><span>LGA1700, DDR4, PCIe 4.0</span></div>
+                <div class="card-price">4 200 ₴</div>
+              </div>
+              <div class="component-card" data-type="mb" data-price="5800" data-name="ASUS TUF B550M (AMD)" data-case="work gaming">
+                <div class="card-top"><span class="tier-badge tier--premium">Топ</span></div>
+                <div class="card-icon"><i class="fas fa-border-all"></i></div>
+                <div class="card-info"><strong>ASUS TUF B550M</strong><span>AM4, DDR4, Надійне живлення</span></div>
+                <div class="card-price">5 800 ₴</div>
+              </div>
+            </div>
+          </section>
+
+          <!-- PSU & Case -->
+          <section class="builder-section" id="sec-extra">
+            <div class="section-header">
+              <h2><i class="fas fa-box-open"></i> Блок живлення та Корпус</h2>
+              <span class="section-badge" id="badge-extra">Не обрано</span>
+            </div>
+            <div class="component-grid" data-category="extra">
+              <div class="component-card" data-type="extra" data-price="1800" data-name="БЖ 500W + Офісний корпус" data-case="office">
+                <div class="card-top"><span class="tier-badge tier--budget">Бюджет</span></div>
+                <div class="card-icon"><i class="fas fa-plug"></i></div>
+                <div class="card-info"><strong>БЖ 500W + Офісний корпус</strong><span>Тихий, компактний</span></div>
+                <div class="card-price">1 800 ₴</div>
+              </div>
+              <div class="component-card" data-type="extra" data-price="3200" data-name="БЖ 650W Gold + Gaming Mid-Tower" data-case="gaming">
+                <div class="card-top"><span class="tier-badge tier--optimal">Оптимальний</span></div>
+                <div class="card-icon"><i class="fas fa-plug"></i></div>
+                <div class="card-info"><strong>БЖ 650W Gold + Gaming корпус</strong><span>Скло, RGB, Хороша продувка</span></div>
+                <div class="card-price">3 200 ₴</div>
+              </div>
+              <div class="component-card" data-type="extra" data-price="5500" data-name="БЖ 750W Platinum + Full-Tower" data-case="work">
+                <div class="card-top"><span class="tier-badge tier--premium">Топ</span></div>
+                <div class="card-icon"><i class="fas fa-plug"></i></div>
+                <div class="card-info"><strong>БЖ 750W Platinum + Full-Tower</strong><span>Модульний, Преміум охолодження</span></div>
+                <div class="card-price">5 500 ₴</div>
+              </div>
+            </div>
+          </section>
+
+        </div>
+
+        <!-- Right: Sticky Summary -->
+        <aside class="builder-summary">
+          <div class="summary-box">
+            <div class="summary-header">
+              <h3><i class="fas fa-clipboard-list"></i> ВАША КОНФІГУРАЦІЯ</h3>
+              <button class="btn-reset" id="resetBtn"><i class="fas fa-undo"></i> Скинути</button>
+            </div>
+            
+            <div class="summary-items" id="summaryList">
+              <div class="summary-empty">
+                <i class="fas fa-cubes"></i>
+                <p>Оберіть комплектуючі зліва, щоб сформувати конфігурацію</p>
+              </div>
+            </div>
+
+            <div class="summary-divider"></div>
+
+            <div class="summary-totals">
+              <div class="total-row">
+                <span>Комплектуючі:</span>
+                <span id="partsTotal">0 ₴</span>
+              </div>
+              
+              <label class="service-toggle">
+                <input type="checkbox" id="assemblyService" checked>
+                <span>Збірка, кабель-менеджмент та встановлення ОС</span>
+                <span class="service-price">+ 800 ₴</span>
+              </label>
+
+              <div class="total-row grand-total">
+                <span>Разом:</span>
+                <span id="grandTotal">800 ₴</span>
+              </div>
+            </div>
+
+            <a href="/uk/contact" class="btn btn--primary btn--full btn--glow" id="orderBtn">
+              <i class="fas fa-paper-plane"></i> ЗАМОВИТИ ЗБІРКУ
+            </a>
+            
+            <p class="summary-note">
+              <i class="fas fa-shield-alt"></i> Наші майстри безкоштовно перевірять сумісність перед збіркою
+            </p>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__col footer__col--logo">
+        <p class="footer__desc">&copy; 2026 СЦ КомПашка. Всі права захищені.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/builder.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Прайс-лист | СЦ КомПашка</title>
+  <meta name="description" content="Ціни на ремонт ноутбуків та ПК. Онлайн калькулятор вартості ремонту.">
+  
+  <!-- 1. Base Styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- 2. Price Styles -->
+  <link rel="stylesheet" href="css/prices.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header__inner container">
+      <a href="/uk" class="logo">
+        <div class="logo__icon">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <rect x="15" y="15" width="70" height="50" rx="5" fill="#1565C0" stroke="#0D47A1" stroke-width="2"/>
+            <rect x="20" y="20" width="60" height="35" rx="3" fill="#FFFFFF"/>
+            <circle cx="38" cy="35" r="5" fill="#1565C0"/><circle cx="62" cy="35" r="5" fill="#1565C0"/>
+            <path d="M 42 43 Q 50 50 58 43" stroke="#1565C0" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <rect x="40" y="65" width="20" height="8" rx="2" fill="#1565C0"/>
+            <path d="M 30 73 L 70 73 L 65 80 L 35 80 Z" fill="#1565C0"/>
+            <path d="M 15 35 Q 5 30 5 25" stroke="#1565C0" stroke-width="4" fill="none" stroke-linecap="round"/>
+            <path d="M 85 35 Q 95 30 95 25" stroke="#1565C0" stroke-width="4" fill="none" stroke-linecap="round"/>
+            <path d="M 38 78 Q 35 88 38 92" stroke="#1565C0" stroke-width="4" fill="none" stroke-linecap="round"/>
+            <path d="M 62 78 Q 65 88 62 92" stroke="#1565C0" stroke-width="4" fill="none" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="logo__text">
+          <span class="logo__name">СЦ КомПашка</span>
+          <span class="logo__sub">СЕРВІСНИЙ ЦЕНТР</span>
+        </div>
+      </a>
+
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="/uk" class="nav__link">Головна</a></li>
+          <li><a href="/uk/services" class="nav__link">Послуги</a></li>
+          <li><a href="/uk/prices" class="nav__link nav__link--active">Прайс</a></li>
+          <li><a href="/uk/pc-builder" class="nav__link">Конфігуратор</a></li>
+          <li><a href="/uk/blog" class="nav__link">Блог</a></li>
+          <li><a href="/uk/about" class="nav__link">Про нас</a></li>
+        </ul>
+      </nav>
+      <a href="/uk/contact" class="header__cta"><i class="fas fa-calendar-check"></i> <span>Записатися</span></a>
+      <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="prices-page">
+    <div class="container">
+      
+      <div class="prices-header">
+        <h1 class="page-title">ПРАЙС-ЛИСТ</h1>
+        <p class="page-desc">Оберіть потрібні послуги та дізнайтесь попередню вартість ремонту</p>
+      </div>
+
+      <div class="prices-layout">
+        
+        <!-- Left Column: Service List -->
+        <div class="prices-list">
+          
+          <!-- Category: Laptops -->
+          <div class="price-category" data-category="laptops">
+            <h3 class="price-category__title"><i class="fas fa-laptop"></i> Ноутбуки</h3>
+            <ul class="price-items">
+              <li class="price-item" data-price="200">
+                <label>
+                  <span class="price-item__check"><input type="checkbox"></span>
+                  <span class="price-item__info">
+                    <span class="name">Базова діагностика</span>
+                    <span class="sub">Якщо ремонт не потрібен</span>
+                  </span>
+                  <span class="price-item__cost">200 ₴</span>
+                </label>
+              </li>
+              <li class="price-item" data-price="450">
+                <label>
+                  <span class="price-item__check"><input type="checkbox"></span>
+                  <span class="price-item__info">
+                    <span class="name">Чистка від пилу + термопаста</span>
+                    <span class="sub">Профілактика перегріву</span>
+                  </span>
+                  <span class="price-item__cost">450 ₴</span>
+                </label>
+              </li>
+              <li class="price-item" data-price="350">
+                <label>
+                  <span class="price-item__check"><input type="checkbox"></span>
+                  <span class="price-item__info">
+                    <span class="name">Заміна клавіатури</span>
+                    <span class="sub">Враховуючи запчастину</span>
+                  </span>
+                  <span class="price-item__cost">350 ₴</span>
+                </label>
+              </li>
+              <li class="price-item" data-price="850">
+                <label>
+                  <span class="price-item__check"><input type="checkbox"></span>
+                  <span class="price-item__info">
+                    <span class="name">Заміна матриці (екрана)</span>
+                    <span class="sub">Оригінал / Якісний аналог</span>
+                  </span>
+                  <span class="price-item__cost">від 850 ₴</span>
+                </label>
+              </li>
+              <li class="price-item" data-price="300">
+                <label>
+                  <span class="price-item__check"><input type="checkbox"></span>
+                  <span class="price-item__info">
+                    <span class="name">Заміна акумулятора</span>
+                    <span class="sub">Враховуючи батарею</span>
+                  </span>
+                  <span class="price-item__cost">від 300 ₴</span>
+                </label>
+              </li>
+              <li class="price-item" data-price="400">
+                <label>
+                  <span class="price-item__check"><input type="checkbox"></span>
+                  <span class="price-item__info">
+                    <span class="name">Ремонт гнізда живлення</span>
+                    <span class="sub">Пайка або заміна роз'єму</span>
+                  </span>
+                  <span class="price-item__cost">400 ₴</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Category: Desktops -->
+          <div class="price-category" data-category="desktops">
+            <h3 class="price-category__title"><i class="fas fa-desktop"></i> Комп'ютери</h3>
+            <ul class="price-items">
+              <li class="price-item" data-price="800">
+                <label>
+                  <span class="price-item__check"><input type="checkbox"></span>
+                  <span class="price-item__info">
+                    <span class="name">Збірка ПК під ключ</span>
+                    <span class="sub">Складання, налаштування, тест</span>
+                  </span>
+                  <span class="price-item__cost">800 </span>
+                </label>
+              </li>
+              <li class="price-item" data-price="350">
+                <label>
+                  <span class="price-item__check"><input type="checkbox"></span>
+                  <span class="price-item__info">
+                    <span class="name">Встановлення Windows</span>
+                    <span class="sub">Повний пакет драйверів та софту</span>
+                  </span>
+                  <span class="price-item__cost">350 ₴</span>
+                </label>
+              </li>
+              <li class="price-item" data-price="250">
+                <label>
+                  <span class="price-item__check"><input type="checkbox"></span>
+                  <span class="price-item__info">
+                    <span class="name">Видалення вірусів</span>
+                    <span class="sub">Повне лікування системи</span>
+                  </span>
+                  <span class="price-item__cost">250 ₴</span>
+                </label>
+              </li>
+              <li class="price-item" data-price="200">
+                <label>
+                  <span class="price-item__check"><input type="checkbox"></span>
+                  <span class="price-item__info">
+                    <span class="name">Апгрейд (RAM / SSD)</span>
+                    <span class="sub">Встановлення нових комплектуючих</span>
+                  </span>
+                  <span class="price-item__cost">200 ₴</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Category: Monitors & TV -->
+          <div class="price-category" data-category="monitors">
+            <h3 class="price-category__title"><i class="fas fa-tv"></i> Монітори та ТВ</h3>
+            <ul class="price-items">
+              <li class="price-item" data-price="400">
+                <label>
+                  <span class="price-item__check"><input type="checkbox"></span>
+                  <span class="price-item__info">
+                    <span class="name">Ремонт моніторів</span>
+                    <span class="sub">Налаштування матриці, плат</span>
+                  </span>
+                  <span class="price-item__cost">від 400 ₴</span>
+                </label>
+              </li>
+              <li class="price-item" data-price="600">
+                <label>
+                  <span class="price-item__check"><input type="checkbox"></span>
+                  <span class="price-item__info">
+                    <span class="name">Ремонт ТВ (Підсвітка LED)</span>
+                    <span class="sub">Заміна стрічок підсвітки</span>
+                  </span>
+                  <span class="price-item__cost">від 600 ₴</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Category: Software -->
+          <div class="price-category" data-category="software">
+            <h3 class="price-category__title"><i class="fas fa-code"></i> Програмне забезпечення</h3>
+            <ul class="price-items">
+              <li class="price-item" data-price="300">
+                <label>
+                  <span class="price-item__check"><input type="checkbox"></span>
+                  <span class="price-item__info">
+                    <span class="name">Встановлення Office / Ліцензії</span>
+                  </span>
+                  <span class="price-item__cost">300 ₴</span>
+                </label>
+              </li>
+              <li class="price-item" data-price="200">
+                <label>
+                  <span class="price-item__check"><input type="checkbox"></span>
+                  <span class="price-item__info">
+                    <span class="name">Відновлення даних</span>
+                    <span class="sub">З дисків та флешок</span>
+                  </span>
+                  <span class="price-item__cost">від 200 ₴</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Calculator -->
+        <aside class="price-calc-sidebar">
+          <div class="calc-box">
+            <h4 class="calc-title"><i class="fas fa-calculator"></i> ВАШ КОШТОРИС</h4>
+            <div class="calc-list" id="calcList">
+              <p class="calc-empty">Оберіть послуги зліва...</p>
+            </div>
+            <div class="calc-footer">
+              <div class="calc-total">
+                <span>Разом:</span>
+                <span class="calc-total__value" id="calcTotal">0 ₴</span>
+              </div>
+              <a href="/uk/contact" class="btn btn--primary btn--full" id="sendCalcBtn">
+                <i class="fas fa-paper-plane"></i> Замовити ремонт
+              </a>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__col footer__col--logo">
+        <p class="footer__desc">&copy; 2026 СЦ КомПашка. Всі права захищені.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/prices.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
