@@ -1490,6 +1490,69 @@ address { font-style: normal; }
   transform-origin: 85px 35px;
   animation: logo-wave 2.8s ease-in-out infinite;
 }
+
+/* ===== SCROLL TO TOP (Ліворуч, по центру, зі скляним ефектом) ===== */
+.scroll-top-btn {
+  position: fixed;
+  left: 250px;
+  top: 96%;
+  transform: translateY(-50%) translateX(-30px);
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(21, 101, 192, 0.15);
+  color: var(--blue-primary);
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  z-index: 998;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Плавна поява */
+.scroll-top-btn.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-50%) translateX(0);
+}
+
+/* Hover-ефект */
+.scroll-top-btn:hover {
+  background: var(--blue-primary);
+  color: #fff;
+  border-color: var(--blue-primary);
+  box-shadow: 0 6px 20px rgba(21, 101, 192, 0.35);
+  transform: translateY(-50%) scale(1.08);
+}
+
+/* Адаптив для мобільних (щоб не перекривати навігацію) */
+@media (max-width: 768px) {
+  .scroll-top-btn {
+    left: 12px;
+    top: auto;
+    bottom: 90px;
+    transform: translateX(-20px);
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+  .scroll-top-btn.show {
+    transform: translateX(0);
+  }
+  .scroll-top-btn:hover {
+    transform: translateX(0) scale(1.08);
+  }
+}
+
+
 /* ===== REDUCED MOTION ===== */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {

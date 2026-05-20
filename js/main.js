@@ -103,6 +103,36 @@ document.addEventListener('DOMContentLoaded', () => {
   `;
   document.head.appendChild(style);
   
+// ⬆️ SCROLL TO TOP BUTTON (З'являється після ~50% прокрутки)
+const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+if (scrollTopBtn) {
+  let ticking = false;
+  
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        // Розраховуємо відсоток прокрутки сторінки
+        const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+        
+        if (scrollPercent > 50) {
+          scrollTopBtn.classList.add('show');
+        } else {
+          scrollTopBtn.classList.remove('show');
+        }
+        ticking = false;
+      });
+      ticking = true;
+    }
+  });
+
+  scrollTopBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
+
+
+  
   // 🌟 Scroll Animations
   const observerOptions = { 
     threshold: 0.1,
