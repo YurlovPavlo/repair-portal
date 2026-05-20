@@ -2,17 +2,19 @@
 <html lang="uk">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>СЦ КомПашка — Сервісний центр | Миколаїв</title>
-  <meta name="description" content="Професійний ремонт комп'ютерів та ноутбуків у Миколаєві. Швидко, якісно, надійно. Вулиця Гліба Бабіча, 51."/>
-  <link rel="stylesheet" href="css/style.css"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <meta name="description" content="Професійний ремонт комп'ютерів та ноутбуків у Миколаєві. Гарантія до 12 міс. Безкоштовна діагностика." />
+  
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
 
-  <!-- 🔝 Header -->
+  <!-- Header (Glassmorphism) -->
   <header class="header">
     <div class="header__top">
       <div class="container header__top-inner">
@@ -29,44 +31,34 @@
         </div>
         <div class="header__schedule">
           <i class="fas fa-clock"></i>
-          Працюємо щодня: з 9:00 – 18:00
+          Працюємо щодня: 9:00 – 20:00
         </div>
       </div>
     </div>
-    
+
     <div class="header__main">
       <div class="container header__inner">
-        <a href="index.html" class="logo">
+        <a href="/" class="logo">
           <div class="logo__icon">
-    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-  <!-- Корпус монітора -->
-  <rect x="15" y="15" width="70" height="50" rx="5" fill="#1565C0" stroke="#0D47A1" stroke-width="2"/>
-  <!-- Екран -->
-  <rect x="20" y="20" width="60" height="35" rx="3" fill="#FFFFFF"/>
-  
-  <!-- 👁️ ОЧІ (з класом для моргання) -->
-  <g class="logo-eyes">
-    <circle cx="38" cy="35" r="5" fill="#1565C0"/>
-    <circle cx="62" cy="35" r="5" fill="#1565C0"/>
-  </g>
-  
-  <!-- Посмішка -->
-  <path d="M 42 43 Q 50 50 58 43" stroke="#1565C0" stroke-width="3" fill="none" stroke-linecap="round"/>
-  
-  <!-- Підставка -->
-  <rect x="40" y="65" width="20" height="8" rx="2" fill="#1565C0"/>
-  <path d="M 30 73 L 70 73 L 65 80 L 35 80 Z" fill="#1565C0"/>
-  
-  <!-- Ніжки -->
-  <path d="M 38 78 Q 35 88 38 92" stroke="#1565C0" stroke-width="4" fill="none" stroke-linecap="round"/>
-  <path d="M 62 78 Q 65 88 62 92" stroke="#1565C0" stroke-width="4" fill="none" stroke-linecap="round"/>
-  
-  <!-- Ліва рука (спокійна) -->
-  <path d="M 15 35 Q 5 30 5 25" stroke="#1565C0" stroke-width="4" fill="none" stroke-linecap="round"/>
-  
-  <!-- Права рука (махає) -->
-  <path class="logo-arm-wave" d="M 85 35 Q 95 30 95 20" stroke="#1565C0" stroke-width="4" fill="none" stroke-linecap="round"/>
-</svg>
+            <!-- SVG Logo with Blinking Animation -->
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <rect x="15" y="15" width="70" height="50" rx="5" fill="#1565C0" stroke="#0D47A1" stroke-width="2" />
+              <rect x="20" y="20" width="60" height="35" rx="3" fill="#FFFFFF" />
+              <!-- Animated Eyes -->
+              <g class="logo-eyes">
+                <circle cx="38" cy="35" r="5" fill="#1565C0" />
+                <circle cx="62" cy="35" r="5" fill="#1565C0" />
+              </g>
+              <path d="M 42 43 Q 50 50 58 43" stroke="#1565C0" stroke-width="3" fill="none" stroke-linecap="round" />
+              <rect x="40" y="65" width="20" height="8" rx="2" fill="#1565C0" />
+              <path d="M 30 73 L 70 73 L 65 80 L 35 80 Z" fill="#1565C0" />
+              <!-- Left Arm (Static) -->
+              <path d="M 15 35 Q 5 30 5 25" stroke="#1565C0" stroke-width="4" fill="none" stroke-linecap="round" />
+              <!-- Right Arm (Waving Animation) -->
+              <path class="logo-arm-wave" d="M 85 35 Q 95 30 95 20" stroke="#1565C0" stroke-width="4" fill="none" stroke-linecap="round" />
+              <path d="M 38 78 Q 35 88 38 92" stroke="#1565C0" stroke-width="4" fill="none" stroke-linecap="round" />
+              <path d="M 62 78 Q 65 88 62 92" stroke="#1565C0" stroke-width="4" fill="none" stroke-linecap="round" />
+            </svg>
           </div>
           <div class="logo__text">
             <span class="logo__name">СЦ КомПашка</span>
@@ -76,13 +68,12 @@
 
         <nav class="nav" id="nav">
           <ul class="nav__list">
-            <li><a href="index.html" class="nav__link nav__link--active">Головна</a></li>
+            <li><a href="index.html" class="nav__link">Головна</a></li>
             <li><a href="services.html" class="nav__link">Послуги</a></li>
             <li><a href="prices.html" class="nav__link">Прайс</a></li>
             <li><a href="pc-builder.html" class="nav__link">Конфігуратор</a></li>
             <li><a href="blog.html" class="nav__link">Блог</a></li>
             <li><a href="about.html" class="nav__link">Про нас</a></li>
-            <li><a href="contact.html" class="nav__link">Контакти</a></li>
           </ul>
         </nav>
 
@@ -98,122 +89,122 @@
     </div>
   </header>
 
-  <!-- 🎯 Hero Section -->
+  <!-- 🎯 Hero Section (New) -->
   <section class="hero">
-    <div class="hero__bg"></div>
+    <!-- Background Orbs -->
+    <div class="hero__orb hero__orb--1"></div>
+    <div class="hero__orb hero__orb--2"></div>
+    <div class="hero__grid-pattern"></div>
+
     <div class="container hero__inner">
       <div class="hero__content">
-        <div class="hero__badge">
-          <i class="fas fa-shield-alt"></i>
-          ГАРАНТІЯ НА ВСІ ВИДИ РОБІТ
+        <!-- Trust Badge -->
+        <div class="hero__trust-badge">
+          <span class="hero__trust-badge__icon"><i class="fas fa-shield-alt"></i></span>
+          <span class="hero__trust-badge__text"><strong>ГАРАНТІЯ</strong> на всі види робіт</span>
+          <span class="hero__trust-badge__pulse"></span>
         </div>
-        
+
+        <!-- Main Title -->
         <h1 class="hero__title">
-          РЕМОНТ<br/>
-          <span class="hero__title--blue">КОМП'ЮТЕРІВ</span><br/>
-          ТА НОУТБУКІВ
+          <span class="hero__title__line">РЕМОНТ</span>
+          <span class="hero__title__line hero__title__line--blue">КОМП'ЮТЕРІВ</span>
+          <span class="hero__title__line">ТА НОУТБУКІВ</span>
         </h1>
-        
-        <p class="hero__subtitle">
-          Швидко • Якісно • Надійно
-        </p>
-        
+
+        <p class="hero__subtitle">Швидко • Якісно • Надійно</p>
+
+        <!-- Features Grid -->
         <div class="hero__features">
           <div class="hero-feature">
-            <div class="hero-feature__icon">
-              <i class="fas fa-microscope"></i>
-            </div>
-            <div>
+            <div class="hero-feature__icon"><i class="fas fa-stethoscope"></i></div>
+            <div class="hero-feature__text">
               <strong>ДІАГНОСТИКА</strong>
-              <p>Точна діагностика несправностей</p>
+              <span>Точна діагностика несправностей</span>
             </div>
           </div>
           <div class="hero-feature">
-            <div class="hero-feature__icon">
-              <i class="fas fa-wrench"></i>
-            </div>
-            <div>
+            <div class="hero-feature__icon"><i class="fas fa-wrench"></i></div>
+            <div class="hero-feature__text">
               <strong>РЕМОНТ</strong>
-              <p>Усунення апаратних та програмних несправностей</p>
+              <span>Усунення апаратних та програмних несправностей</span>
             </div>
           </div>
           <div class="hero-feature">
-            <div class="hero-feature__icon">
-              <i class="fas fa-tachometer-alt"></i>
-            </div>
-            <div>
+            <div class="hero-feature__icon"><i class="fas fa-tachometer-alt"></i></div>
+            <div class="hero-feature__text">
               <strong>ПРИСКОРЕННЯ</strong>
-              <p>Оптимізація системи та чистка від пилу</p>
+              <span>Оптимізація системи та чистка від пилу</span>
             </div>
           </div>
           <div class="hero-feature">
-            <div class="hero-feature__icon">
-              <i class="fas fa-virus-slash"></i>
-            </div>
-            <div>
+            <div class="hero-feature__icon"><i class="fas fa-virus-slash"></i></div>
+            <div class="hero-feature__text">
               <strong>ВИДАЛЕННЯ ВІРУСІВ</strong>
-              <p>Встановлення та налаштування антивірусів</p>
+              <span>Встановлення та налаштування антивірусів</span>
             </div>
           </div>
         </div>
-        
+
+        <!-- Actions -->
         <div class="hero__actions">
-          <a href="/uk/contact" class="btn btn--primary">
-            <i class="fas fa-paper-plane"></i>
-            ЗАЛИШИТИ ЗАЯВКУ
+          <a href="contact.html" class="btn btn--primary btn--pulse">
+            <i class="fas fa-paper-plane"></i> ЗАЛИШИТИ ЗАЯВКУ
           </a>
-          <a href="tel:+380936949627" class="btn btn--secondary">
-            <i class="fas fa-phone-alt"></i>
-            ПОЗВОНИТИ
+          <a href="tel:+380936949627" class="btn btn--outline">
+            <i class="fas fa-phone-alt"></i> ПОЗВОНИТИ
           </a>
+        </div>
+
+        <!-- Trust Stats -->
+        <div class="hero__trust-stats">
+          <div class="trust-stat">
+            <span class="trust-stat__number">5000</span><span class="trust-stat__plus">+</span>
+            <span class="trust-stat__label">Відремонтовано</span>
+          </div>
+          <div class="trust-stat__divider"></div>
+          <div class="trust-stat">
+            <span class="trust-stat__number">13</span>
+            <span class="trust-stat__label">Років досвіду</span>
+          </div>
+          <div class="trust-stat__divider"></div>
+          <div class="trust-stat">
+            <span class="trust-stat__number">98</span><span class="trust-stat__percent">%</span>
+            <span class="trust-stat__label">Задоволених клієнтів</span>
+          </div>
         </div>
       </div>
-      
+
+      <!-- Right Visual -->
       <div class="hero__visual">
-        <div class="hero__image-wrapper">
-          <!-- Імітація зображення з PC та ноутбуком -->
-          <div class="hero__pc-showcase">
-            <div class="pc-tower">
-              <div class="pc-fan"></div>
-              <div class="pc-glow"></div>
-            </div>
-            <div class="laptop">
-              <div class="laptop-screen">
-                <i class="fas fa-tools"></i>
-                <span>СЕРВІСНИЙ ЦЕНТР</span>
+        <div class="hero__visual__wrapper">
+          <div class="hero__device hero__device--laptop">
+            <div class="device__screen">
+              <div class="device__screen__content">
+                <i class="fas fa-tools device__icon"></i>
+                <span class="device__text">СЕРВІСНИЙ ЦЕНТР</span>
               </div>
             </div>
+            <div class="device__keyboard"></div>
           </div>
+
+          <div class="hero__floating-badge hero__floating-badge--1">
+            <i class="fas fa-check-circle"></i> <span>Оригінальні запчастини</span>
+          </div>
+          <div class="hero__floating-badge hero__floating-badge--2">
+            <i class="fas fa-bolt"></i> <span>Ремонт за 24-48 год</span>
+          </div>
+          <div class="hero__floating-badge hero__floating-badge--3">
+            <i class="fas fa-star"></i> <span>Рейтинг 4.9/5</span>
+          </div>
+          
+          <div class="hero__deco hero__deco--circle-1"></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 📊 Stats Bar -->
-  <section class="stats-bar">
-    <div class="container">
-      <div class="stats-bar__inner">
-        <div class="stat-item">
-          <div class="stat-item__value">5000+</div>
-          <div class="stat-item__label">Відремонтовано</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-item__value">13</div>
-          <div class="stat-item__label">Років досвіду</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-item__value">98%</div>
-          <div class="stat-item__label">Задоволених клієнтів</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-item__value">24-48</div>
-          <div class="stat-item__label">Годин ремонту</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 🔧 Послуги -->
+  <!-- 🔧 Services Section (Old content preserved) -->
   <section class="services">
     <div class="container">
       <div class="section-header">
@@ -221,152 +212,110 @@
         <h2 class="section-header__title">ПРОФЕСІЙНИЙ РЕМОНТ</h2>
         <p class="section-header__desc">Ми пропонуємо повний спектр послуг з ремонту та обслуговування комп'ютерної техніки</p>
       </div>
-      
+
       <div class="services-grid">
-        
-        <!-- Ноутбуки -->
         <article class="service-card">
-          <div class="service-card__icon service-card__icon--laptop">
-            <i class="fas fa-laptop"></i>
-          </div>
+          <div class="service-card__icon service-card__icon--laptop"><i class="fas fa-laptop"></i></div>
           <h3>РЕМОНТ НОУТБУКІВ</h3>
           <ul class="service-card__list">
             <li><i class="fas fa-check-circle"></i> Заміна матриці/екрана</li>
             <li><i class="fas fa-check-circle"></i> Чистка + термопаста</li>
             <li><i class="fas fa-check-circle"></i> Відновлення після залиття</li>
             <li><i class="fas fa-check-circle"></i> Заміна клавіатури, роз'ємів</li>
-            <li><i class="fas fa-check-circle"></i> Апгрейд (SSD, RAM)</li>
           </ul>
           <div class="service-card__footer">
             <span class="service-card__price">від 350 ₴</span>
-            <a href="/uk/services/laptops" class="service-card__link">
-              Детальніше <i class="fas fa-arrow-right"></i>
-            </a>
+            <a href="services.html" class="service-card__link">Детальніше <i class="fas fa-arrow-right"></i></a>
           </div>
         </article>
 
-        <!-- Комп'ютери -->
         <article class="service-card">
-          <div class="service-card__icon service-card__icon--desktop">
-            <i class="fas fa-desktop"></i>
-          </div>
+          <div class="service-card__icon service-card__icon--desktop"><i class="fas fa-desktop"></i></div>
           <h3>РЕМОНТ ПК</h3>
           <ul class="service-card__list">
             <li><i class="fas fa-check-circle"></i> Діагностика компонентів</li>
             <li><i class="fas fa-check-circle"></i> Збірка під ключ</li>
             <li><i class="fas fa-check-circle"></i> Заміна відеокарти/БЖ</li>
             <li><i class="fas fa-check-circle"></i> Встановлення ОС</li>
-            <li><i class="fas fa-check-circle"></i> Оптимізація швидкості</li>
           </ul>
           <div class="service-card__footer">
             <span class="service-card__price">від 300 ₴</span>
-            <a href="/uk/services/desktops" class="service-card__link">
-              Детальніше <i class="fas fa-arrow-right"></i>
-            </a>
+            <a href="services.html" class="service-card__link">Детальніше <i class="fas fa-arrow-right"></i></a>
           </div>
         </article>
 
-        <!-- Монітори -->
         <article class="service-card">
-          <div class="service-card__icon service-card__icon--monitor">
-            <i class="fas fa-tv"></i>
-          </div>
+          <div class="service-card__icon service-card__icon--monitor"><i class="fas fa-tv"></i></div>
           <h3>РЕМОНТ МОНІТОРІВ</h3>
           <ul class="service-card__list">
             <li><i class="fas fa-check-circle"></i> Заміна матриці/підсвітки</li>
             <li><i class="fas fa-check-circle"></i> Ремонт плат живлення</li>
             <li><i class="fas fa-check-circle"></i> Калібрування кольору</li>
-            <li><i class="fas fa-check-circle"></i> Відновлення корпусу</li>
           </ul>
           <div class="service-card__footer">
             <span class="service-card__price">від 400 ₴</span>
-            <a href="/uk/services/monitors" class="service-card__link">
-              Детальніше <i class="fas fa-arrow-right"></i>
-            </a>
+            <a href="services.html" class="service-card__link">Детальніше <i class="fas fa-arrow-right"></i></a>
           </div>
         </article>
 
-        <!-- Телевізори -->
         <article class="service-card">
-          <div class="service-card__icon service-card__icon--tv">
-            <i class="fas fa-tv"></i>
-          </div>
+          <div class="service-card__icon service-card__icon--tv"><i class="fas fa-tv"></i></div>
           <h3>РЕМОНТ ТЕЛЕВІЗОРІВ</h3>
           <ul class="service-card__list">
             <li><i class="fas fa-check-circle"></i> Діагностика плат</li>
             <li><i class="fas fa-check-circle"></i> Заміна матриці</li>
             <li><i class="fas fa-check-circle"></i> Налаштування ПЗ</li>
-            <li><i class="fas fa-check-circle"></i> Ремонт роз'ємів</li>
           </ul>
           <div class="service-card__footer">
             <span class="service-card__price">від 450 ₴</span>
-            <a href="/uk/services/tvs" class="service-card__link">
-              Детальніше <i class="fas fa-arrow-right"></i>
-            </a>
+            <a href="services.html" class="service-card__link">Детальніше <i class="fas fa-arrow-right"></i></a>
           </div>
         </article>
-
       </div>
       
       <div class="services__more">
-        <a href="/uk/services" class="btn btn--outline">
-          <i class="fas fa-th"></i>
-          УСІ ПОСЛУГИ
-        </a>
+        <a href="services.html" class="btn btn--outline"><i class="fas fa-th"></i> УСІ ПОСЛУГИ</a>
       </div>
     </div>
   </section>
 
-  <!-- ✅ Додаткові послуги (як на картинці) -->
+  <!-- ⚙️ Extra Services -->
   <section class="extra-services">
     <div class="container">
       <div class="section-header">
         <span class="section-header__label">ЩЕ БІЛЬШЕ МОЖЛИВОСТЕЙ</span>
         <h2 class="section-header__title">ДОДАТКОВІ ПОСЛУГИ</h2>
       </div>
-      
       <div class="extra-services-grid">
         <div class="extra-service">
-          <div class="extra-service__icon">
-            <i class="fas fa-wind"></i>
-          </div>
+          <div class="extra-service__icon"><i class="fas fa-wind"></i></div>
           <span>Чистка системи охолодження</span>
         </div>
         <div class="extra-service">
-          <div class="extra-service__icon">
-            <i class="fas fa-microchip"></i>
-          </div>
+          <div class="extra-service__icon"><i class="fas fa-microchip"></i></div>
           <span>Заміна комплектуючих</span>
         </div>
         <div class="extra-service">
-          <div class="extra-service__icon">
-            <i class="fas fa-hdd"></i>
-          </div>
+          <div class="extra-service__icon"><i class="fas fa-hdd"></i></div>
           <span>Встановлення SSD / HDD</span>
         </div>
         <div class="extra-service">
-          <div class="extra-service__icon">
-            <i class="fas fa-wifi"></i>
-          </div>
+          <div class="extra-service__icon"><i class="fas fa-wifi"></i></div>
           <span>Налаштування мережі та Wi-Fi</span>
         </div>
         <div class="extra-service">
-          <div class="extra-service__icon">
-            <i class="fas fa-cloud-upload-alt"></i>
-          </div>
+          <div class="extra-service__icon"><i class="fas fa-cloud-upload-alt"></i></div>
           <span>Налаштування резервного копіювання</span>
         </div>
         <div class="extra-service">
-          <div class="extra-service__icon">
-            <i class="fas fa-headset"></i>
-          </div>
+          <div class="extra-service__icon"><i class="fas fa-headset"></i></div>
           <span> Консультація та підтримка</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!--  Конфігуратор ПК -->
+  <!-- 💻 Configurator Teaser -->
   <section class="configurator">
     <div class="container configurator__inner">
       <div class="configurator__content">
@@ -374,19 +323,14 @@
           <span class="section-header__label">КОНФІГУРАТОР</span>
           <h2 class="section-header__title">ЗБЕРИ СВІЙ ІДЕАЛЬНИЙ ПК</h2>
         </div>
-        <p class="configurator__text">
-          Підберемо комплектуючі під ваш бюджет та задачі. Перевіримо сумісність. Зберемо та протестуємо.
-        </p>
+        <p class="configurator__text">Підберемо комплектуючі під ваш бюджет та задачі. Перевіримо сумісність. Зберемо та протестуємо.</p>
         <ul class="configurator__features">
           <li><i class="fas fa-check-double"></i> Онлайн-перевірка сумісності</li>
           <li><i class="fas fa-check-double"></i> Порівняння цін у реальному часі</li>
           <li><i class="fas fa-check-double"></i> Гарантія на збірку 24 міс.</li>
           <li><i class="fas fa-check-double"></i> Безкоштовне налаштування</li>
         </ul>
-        <a href="/uk/pc-builder" class="btn btn--primary">
-          <i class="fas fa-play"></i>
-          СПРОБУВАТИ КОНФІГУРАТОР
-        </a>
+        <a href="pc-builder.html" class="btn btn--primary"><i class="fas fa-play"></i> СПРОБУВАТИ КОНФІГУРАТОР</a>
       </div>
       <div class="configurator__visual">
         <div class="pc-builder-mockup">
@@ -401,73 +345,43 @@
     </div>
   </section>
 
-  <!-- 💬 Відгуки -->
+  <!-- 💬 Reviews -->
   <section class="reviews">
     <div class="container">
       <div class="section-header">
         <span class="section-header__label">ВІДГУКИ</span>
         <h2 class="section-header__title">ЩО КАЖУТЬ НАШІ КЛІЄНТИ</h2>
       </div>
-      
       <div class="reviews-grid">
         <blockquote class="review-card">
-          <div class="review-card__stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
+          <div class="review-card__stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
           <p>«Замінили екран на MacBook за 1 день. Якість — ідеально. Дуже задоволена сервісом!»</p>
           <div class="review-card__author">
             <div class="review-card__avatar">О</div>
-            <div>
-              <strong>Олена К.</strong>
-              <span>Заміна матриці</span>
-            </div>
+            <div><strong>Олена К.</strong><span>Заміна матриці</span></div>
           </div>
         </blockquote>
-
         <blockquote class="review-card">
-          <div class="review-card__stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
+          <div class="review-card__stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
           <p>«Зібрали ігровий ПК під бюджет. Працює тихо, потужно. Рекомендую!»</p>
           <div class="review-card__author">
             <div class="review-card__avatar">Д</div>
-            <div>
-              <strong>Дмитро М.</strong>
-              <span>Збірка ПК</span>
-            </div>
+            <div><strong>Дмитро М.</strong><span>Збірка ПК</span></div>
           </div>
         </blockquote>
-
         <blockquote class="review-card">
-          <div class="review-card__stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
+          <div class="review-card__stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
           <p>«Після залиття ноутбук не вмикався. Врятували дані та відновили. Дякую!»</p>
           <div class="review-card__author">
             <div class="review-card__avatar">А</div>
-            <div>
-              <strong>Анна В.</strong>
-              <span>Відновлення після залиття</span>
-            </div>
+            <div><strong>Анна В.</strong><span>Відновлення після залиття</span></div>
           </div>
         </blockquote>
       </div>
     </div>
   </section>
 
-  <!-- 💰 Прайс тізер -->
+  <!-- 💰 Prices Teaser -->
   <section class="prices-teaser">
     <div class="container">
       <div class="section-header">
@@ -475,13 +389,10 @@
         <h2 class="section-header__title">ПОПУЛЯРНІ ПОСЛУГИ</h2>
         <p class="section-header__desc">Чесні ціни без прихованих платежів</p>
       </div>
-      
       <div class="prices-grid">
         <div class="price-item price-item--highlight">
           <div class="price-item__badge">БЕЗКОШТОВНО</div>
-          <div class="price-item__icon">
-            <i class="fas fa-search"></i>
-          </div>
+          <div class="price-item__icon"><i class="fas fa-search"></i></div>
           <h4>Діагностика</h4>
           <p>Апаратна та програмна перевірка</p>
           <div class="price-item__price">
@@ -489,123 +400,77 @@
             <span class="price-current">0 ₴</span>
           </div>
         </div>
-
         <div class="price-item">
-          <div class="price-item__icon">
-            <i class="fas fa-wind"></i>
-          </div>
+          <div class="price-item__icon"><i class="fas fa-wind"></i></div>
           <h4>Чистка + термопаста</h4>
           <p>Повне обслуговування системи охолодження</p>
-          <div class="price-item__price">
-            <span class="price-current">від 450 ₴</span>
-          </div>
+          <div class="price-item__price"><span class="price-current">від 450 ₴</span></div>
         </div>
-
         <div class="price-item">
-          <div class="price-item__icon">
-            <i class="fas fa-hdd"></i>
-          </div>
+          <div class="price-item__icon"><i class="fas fa-hdd"></i></div>
           <h4>Заміна HDD на SSD</h4>
           <p>Встановлення + перенесення даних</p>
-          <div class="price-item__price">
-            <span class="price-current">від 350 ₴</span>
-          </div>
+          <div class="price-item__price"><span class="price-current">від 350 ₴</span></div>
         </div>
-
         <div class="price-item">
-          <div class="price-item__icon">
-            <i class="fas fa-memory"></i>
-          </div>
+          <div class="price-item__icon"><i class="fas fa-memory"></i></div>
           <h4>Додавання RAM</h4>
           <p>Підбір та встановлення пам'яті</p>
-          <div class="price-item__price">
-            <span class="price-current">від 200 ₴</span>
-          </div>
+          <div class="price-item__price"><span class="price-current">від 200 ₴</span></div>
         </div>
       </div>
-      
       <div class="prices-teaser__more">
-        <a href="/uk/prices" class="btn btn--outline">
-          <i class="fas fa-list"></i>
-          ПОВНИЙ ПРАЙС-ЛИСТ
-        </a>
+        <a href="prices.html" class="btn btn--outline"><i class="fas fa-list"></i> ПОВНИЙ ПРАЙС-ЛИСТ</a>
       </div>
     </div>
   </section>
 
-  <!--  CTA -->
+  <!-- 📞 CTA -->
   <section class="cta">
     <div class="container cta__inner">
       <div class="cta__content">
-        <h2 class="cta__title">
-          <i class="fas fa-phone-alt"></i>
-          ПРАЦЮЄМО ДЛЯ ВАС ЩОДНЯ!
-        </h2>
-        <p class="cta__text">
-          Залиште заявку — ми зв'яжемося з вами протягом 15 хвилин
-        </p>
-        
+        <h2 class="cta__title"><i class="fas fa-phone-alt"></i> ПРАЦЮЄМО ДЛЯ ВАС ЩОДНЯ!</h2>
+        <p class="cta__text">Залиште заявку — ми зв'яжемося з вами протягом 15 хвилин</p>
         <form class="cta-form" id="ctaForm">
           <div class="form-group">
-            <i class="fas fa-user form-group__icon"></i>
-            <input type="text" name="name" placeholder="Ваше ім'я" required/>
-          </div>
-          <div class="form-group">
             <i class="fas fa-phone form-group__icon"></i>
-            <input type="tel" name="phone" placeholder="+380 __ ___ __ __" required/>
+            <input type="tel" name="phone" placeholder="+380 __ ___ __ __" required />
           </div>
           <button type="submit" class="btn btn--primary btn--large">
-            <i class="fas fa-paper-plane"></i>
-            ОТРИМАТИ КОНСУЛЬТАЦІЮ
+            <i class="fas fa-paper-plane"></i> ОТРИМАТИ КОНСУЛЬТАЦІЮ
           </button>
         </form>
-        
         <div class="cta__contacts">
-          <a href="tel:+380936949627" class="cta-contact">
-            <i class="fas fa-phone-alt"></i>
-            <span>093 694 96 27</span>
-          </a>
-          <a href="https://t.me/compashka" target="_blank" class="cta-contact">
-            <i class="fab fa-telegram"></i>
-            <span>Telegram</span>
-          </a>
-          <a href="https://wa.me/380936949627" target="_blank" class="cta-contact">
-            <i class="fab fa-whatsapp"></i>
-            <span>WhatsApp</span>
-          </a>
+          <a href="tel:+380936949627" class="cta-contact"><i class="fas fa-phone-alt"></i><span>093 694 96 27</span></a>
+          <a href="https://t.me/compashka" target="_blank" class="cta-contact"><i class="fab fa-telegram"></i><span>Telegram</span></a>
+          <a href="https://wa.me/380936949627" target="_blank" class="cta-contact"><i class="fab fa-whatsapp"></i><span>WhatsApp</span></a>
         </div>
       </div>
-      
       <div class="cta__map">
         <div class="map-placeholder">
           <i class="fas fa-map-marked-alt"></i>
           <p>м. Миколаїв</p>
-          <p>вул. Гліба Бабіча, 51</p>
-          <a href="https://maps.google.com/?q=Миколаїв+вулиця+Гліба+Бабіча+51" target="_blank" class="map-link">
-            <i class="fas fa-external-link-alt"></i>
-            Відкрити карту
-          </a>
+          <p>вул. Гліба Бабича, 51</p>
+          <a href="https://maps.google.com/?q=Миколаїв+вулиця+Гліба+Бабіча+51" target="_blank" class="map-link"><i class="fas fa-external-link-alt"></i> Відкрити карту</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 🔚 Footer -->
+  <!-- Footer -->
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__col footer__col--logo">
         <a href="/" class="logo">
           <div class="logo__icon">
+             <!-- Footer Logo SVG -->
             <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
               <rect x="15" y="15" width="70" height="50" rx="5" fill="#1565C0" stroke="#0D47A1" stroke-width="2"/>
               <rect x="20" y="20" width="60" height="35" rx="3" fill="#FFFFFF"/>
-              <circle cx="38" cy="35" r="5" fill="#1565C0"/>
-              <circle cx="62" cy="35" r="5" fill="#1565C0"/>
+              <g class="logo-eyes"><circle cx="38" cy="35" r="5" fill="#1565C0"/><circle cx="62" cy="35" r="5" fill="#1565C0"/></g>
               <path d="M 42 43 Q 50 50 58 43" stroke="#1565C0" stroke-width="3" fill="none" stroke-linecap="round"/>
               <rect x="40" y="65" width="20" height="8" rx="2" fill="#1565C0"/>
               <path d="M 30 73 L 70 73 L 65 80 L 35 80 Z" fill="#1565C0"/>
-              <path d="M 15 35 Q 5 30 5 25" stroke="#1565C0" stroke-width="4" fill="none" stroke-linecap="round"/>
-              <path d="M 85 35 Q 95 30 95 25" stroke="#1565C0" stroke-width="4" fill="none" stroke-linecap="round"/>
               <path d="M 38 78 Q 35 88 38 92" stroke="#1565C0" stroke-width="4" fill="none" stroke-linecap="round"/>
               <path d="M 62 78 Q 65 88 62 92" stroke="#1565C0" stroke-width="4" fill="none" stroke-linecap="round"/>
             </svg>
@@ -615,62 +480,40 @@
             <span class="logo__sub">СЕРВІСНИЙ ЦЕНТР</span>
           </div>
         </a>
-        <p class="footer__desc">
-          Професійний ремонт комп'ютерів та ноутбуків у Миколаєві. Працюємо для вас щодня!
-        </p>
+        <p class="footer__desc">Професійний ремонт комп'ютерів та ноутбуків у Миколаєві. Працюємо для вас щодня!</p>
         <div class="footer__social">
           <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
           <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
           <a href="#" class="social-link"><i class="fab fa-telegram-plane"></i></a>
-          <a href="#" class="social-link"><i class="fab fa-viber"></i></a>
         </div>
       </div>
-      
       <div class="footer__col">
         <h4>ПОСЛУГИ</h4>
         <ul>
-          <li><a href="/uk/services/laptops">Ремонт ноутбуків</a></li>
-          <li><a href="/uk/services/desktops">Ремонт комп'ютерів</a></li>
-          <li><a href="/uk/services/monitors">Ремонт моніторів</a></li>
-          <li><a href="/uk/services/tvs">Ремонт телевізорів</a></li>
-          <li><a href="pc-builder.html">Конфігуратор ПК</a></li>
+          <li><a href="services.html">Ремонт ноутбуків</a></li>
+          <li><a href="services.html">Ремонт комп'ютерів</a></li>
+          <li><a href="services.html">Ремонт моніторів</a></li>
+          <li><a href="services.html">Ремонт телевізорів</a></li>
         </ul>
       </div>
-      
       <div class="footer__col">
         <h4>ІНФОРМАЦІЯ</h4>
         <ul>
           <li><a href="prices.html">Прайс-лист</a></li>
           <li><a href="about.html">Про нас / Гарантії</a></li>
           <li><a href="blog.html">Блог</a></li>
-          <li><a href="index.html">Особистий кабінет</a></li>
+          <li><a href="account.html">Особистий кабінет</a></li>
         </ul>
       </div>
-      
-      <div class="footer__col footer__col--contact">
+      <div class="footer__col">
         <h4>КОНТАКТИ</h4>
         <address class="footer__address">
-          <p>
-            <i class="fas fa-map-marker-alt"></i>
-            м. Миколаїв,<br/>
-            вул. Гліба Бабіча, 51
-          </p>
-          <p>
-            <i class="fas fa-phone-alt"></i>
-            <a href="tel:+380936949627">093 694 96 27</a>
-          </p>
-          <p>
-            <i class="fas fa-clock"></i>
-            Пн–Нд: 9:00 – 18:00
-          </p>
-          <p>
-            <i class="fas fa-envelope"></i>
-            <a href="mailto:kompashka.com.ua@gmail.com">kompashka.com.ua@gmail.com</a>
-          </p>
+          <p><i class="fas fa-map-marker-alt"></i> м. Миколаїв,<br/>вул. Гліба Бабіча, 51</p>
+          <p><i class="fas fa-phone-alt"></i> <a href="tel:+380936949627">093 694 96 27</a></p>
+          <p><i class="fas fa-clock"></i> Пн–Нд: 9:00 – 20:00</p>
         </address>
       </div>
     </div>
-    
     <div class="footer__bottom">
       <div class="container">
         <p>&copy; 2026 СЦ КомПашка. Всі права захищені. | <a href="/uk/privacy">Політика конфіденційності</a></p>
@@ -678,13 +521,11 @@
     </div>
   </footer>
 
-  <!-- 📞 Floating Phone Button -->
-  <a href="tel:+380936949627" class="floating-phone" aria-label="Зателефонувати">
-    <i class="fas fa-phone-alt"></i>
-  </a>
+  <!-- ⬆️ Scroll To Top Button -->
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Повернутися вгору">
+    <i class="fas fa-arrow-up"></i>
+  </button>
 
   <script src="js/main.js"></script>
-
- 
 </body>
 </html>
