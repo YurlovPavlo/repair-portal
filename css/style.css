@@ -1464,7 +1464,32 @@ address { font-style: normal; }
     height: 56px;
   }
 }
+/* 👁️ Анімація моргання очей */
+@keyframes logo-blink {
+  0%, 93%, 100% { transform: scaleY(1); }
+  96% { transform: scaleY(0.1); } /* Швидке заплющування */
+}
 
+.logo-eyes {
+  /* Центр анімації — середина екрану монітора */
+  transform-origin: 50px 35px;
+  animation: logo-blink 4.5s infinite ease-in-out;
+}
+
+/* 👋 Анімація махання правою рукою */
+@keyframes logo-wave {
+  0%, 100% { transform: rotate(0deg); }
+  20%      { transform: rotate(18deg); }
+  40%      { transform: rotate(-6deg); }
+  60%      { transform: rotate(12deg); }
+  80%      { transform: rotate(-3deg); }
+}
+
+.logo-arm-wave {
+  /* Точка обертання — "плече" (початок шляху руки) */
+  transform-origin: 85px 35px;
+  animation: logo-wave 2.8s ease-in-out infinite;
+}
 /* ===== REDUCED MOTION ===== */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
